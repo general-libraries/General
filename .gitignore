@@ -234,3 +234,4 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/Src/Common.AddOns/Common.AddOns.LoggingProxies.NLog

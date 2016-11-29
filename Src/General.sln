@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Web", "General.Web\General.Web.csproj", "{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{14803CF6-2992-408D-9A64-2CCCF26B4B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General", "General\General.csproj", "{F99D960D-32C8-467C-BF90-4BDE6BD66F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Web.Api", "General.Web.Api\General.Web.Api.csproj", "{DFAC276A-9CDB-480E-982E-27C6988E9AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Test", "UnitTests\General.Test\General.Test.csproj", "{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Web.Test", "UnitTests\General.Web.Test\General.Web.Test.csproj", "{4BCED4D1-585F-44AD-8B14-ED81907365D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9978064B-70EE-4FCE-A3C9-89B3D25E3E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99D960D-32C8-467C-BF90-4BDE6BD66F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99D960D-32C8-467C-BF90-4BDE6BD66F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99D960D-32C8-467C-BF90-4BDE6BD66F89}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99D960D-32C8-467C-BF90-4BDE6BD66F89}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{F99D960D-32C8-467C-BF90-4BDE6BD66F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99D960D-32C8-467C-BF90-4BDE6BD66F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFAC276A-9CDB-480E-982E-27C6988E9AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAC276A-9CDB-480E-982E-27C6988E9AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFAC276A-9CDB-480E-982E-27C6988E9AAE}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAC276A-9CDB-480E-982E-27C6988E9AAE}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{DFAC276A-9CDB-480E-982E-27C6988E9AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFAC276A-9CDB-480E-982E-27C6988E9AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C48F6F4-E11F-4541-8BA1-F96F51CBAB80} = {14803CF6-2992-408D-9A64-2CCCF26B4B26}
+		{4BCED4D1-585F-44AD-8B14-ED81907365D4} = {14803CF6-2992-408D-9A64-2CCCF26B4B26}
+	EndGlobalSection
+EndGlobal

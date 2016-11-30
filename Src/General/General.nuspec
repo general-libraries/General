@@ -4,8 +4,7 @@
     <id>General</id>
     <version>$version$</version>
     <title>$title$</title>
-    <title>General</title>
-    <authors>Thrita</authors>
+    <authors>$author$</authors>
     <owners>$author$</owners>
     <licenseUrl>https://github.com/Thrita/General/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Thrita/General</projectUrl>

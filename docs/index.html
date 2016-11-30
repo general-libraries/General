@@ -3,2057 +3,2050 @@
 
 <head>
 	<meta charset="utf-8">
-
 	<title>General Library : General</title>
 	<meta name="description" content="General .NET Library : General">
 	<meta name="author" content="Thrita">
-
-	<link rel="stylesheet" href="contents/site.css">
-
+	<link rel="stylesheet" href="css/site.css">
 	<!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-
-	<section class="content-section preview">
-		<header class="content-header">PREVIEW</header>
-		<section class="content markdown-preview markdown-body" id="markdown-preview">
-			<h1 id="common">Common</h1>
-			<table>
-				<tbody>
-					<tr>
-						<td><a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a></td>
-						<td><a href="#comparisonrule">ComparisonRule</a></td>
-					</tr>
-					<tr>
-						<td><a href="#icomparablecollection\`1">IComparableCollection`1</a></td>
-						<td><a href="#icomparisondata">IComparisonData</a></td>
-					</tr>
-					<tr>
-						<td><a href="#commonserviceprovider">CommonServiceProvider</a></td>
-						<td><a href="#assemblyasglobalsettingrepository">AssemblyAsGlobalSettingRepository</a></td>
-					</tr>
-					<tr>
-						<td><a href="#badappsettingexception">BadAppSettingException</a></td>
-						<td><a href="#globalsetting">GlobalSetting</a></td>
-					</tr>
-					<tr>
-						<td><a href="#globalsettingreinitializeexception">GlobalSettingReinitializeException</a></td>
-						<td><a href="#missingappsettingexception">MissingAppSettingException</a></td>
-					</tr>
-					<tr>
-						<td><a href="#aes">AES</a></td>
-						<td><a href="#decryptionexception">DecryptionException</a></td>
-					</tr>
-					<tr>
-						<td><a href="#exceptionmessages">ExceptionMessages</a></td>
-						<td><a href="#arrayextensions">ArrayExtensions</a></td>
-					</tr>
-					<tr>
-						<td><a href="#datasetextensions">DataSetExtensions</a></td>
-						<td><a href="#datatableextension">DataTableExtension</a></td>
-					</tr>
-					<tr>
-						<td><a href="#datetimeextensions">DateTimeExtensions</a></td>
-						<td><a href="#ienumerableextensions">IEnumerableExtensions</a></td>
-					</tr>
-					<tr>
-						<td><a href="#objectextensions">ObjectExtensions</a></td>
-						<td><a href="#stringextensions">StringExtensions</a></td>
-					</tr>
-					<tr>
-						<td><a href="#typeextensions">TypeExtensions</a></td>
-						<td><a href="#base64helper">Base64Helper</a></td>
-					</tr>
-					<tr>
-						<td><a href="#csvhelper">CsvHelper</a></td>
-						<td><a href="#enumhelper">EnumHelper</a></td>
-					</tr>
-					<tr>
-						<td><a href="#mailhelper">MailHelper</a></td>
-						<td><a href="#stringhelper">StringHelper</a></td>
-					</tr>
-					<tr>
-						<td><a href="#xmlhelper">XmlHelper</a></td>
-						<td><a href="#xmltransformationexception">XmlTransformationException</a></td>
-					</tr>
-					<tr>
-						<td><a href="#logentry">LogEntry</a></td>
-						<td><a href="#threaddata">ThreadData</a></td>
-					</tr>
-					<tr>
-						<td><a href="#loglevel">LogLevel</a></td>
-						<td><a href="#logmanager">LogManager</a></td>
-					</tr>
-					<tr>
-						<td><a href="#manager">Manager</a></td>
-						<td><a href="#memorycachemanager\`1">MemoryCacheManager`1</a></td>
-					</tr>
-					<tr>
-						<td><a href="#morethanoneobjectfoundexception\`1">MoreThanOneObjectFoundException`1</a></td>
-						<td><a href="#objectnotfoundexception\`1">ObjectNotFoundException`1</a></td>
-					</tr>
-					<tr>
-						<td><a href="#outofrangeexception">OutOfRangeException</a></td>
-						<td><a href="#servicenotfoundexception">ServiceNotFoundException</a></td>
-					</tr>
-				</tbody>
-			</table>
-
-
-			<h2 id="comparablecollectionbase-1">ComparableCollectionBase`1</h2>
-			<p>Encapsulates member for ComparableCollectionBase abstarct class. Inherited classes from this class can represent a collection
-				of T which can be compaired with anothe collection of the same type.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<h3 id="constructor">Constructor</h3>
-			<p>Base Initializer.</p>
-			<h3 id="add-item-">Add(item)</h3>
-			<p>Adds a new item of T to the corrent collection.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>item</td>
-						<td><em>`0</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Nothing.</p>
-			<h3 id="add-listoft-">Add(listOfT)</h3>
-			<p>Adds a new series of T to the corrent collection.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Nothing.</p>
-			<h3 id="belongsto-listoft-">BelongsTo(listOfT)</h3>
-			<p>Indicates if the current collection contains listOfT by using <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a></p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>true/fasle</p>
-			<h3 id="clear">Clear</h3>
-			<p>Clears the current collection.</p>
-			<h4 id="returns">Returns</h4>
-			<p>Nothing.</p>
-			<h3 id="comparisonrule">ComparisonRule</h3>
-			<p>Gets or sets Comparison Rule.</p>
-			<h4 id="value">Value</h4>
-			<p>Comparison Rule.</p>
-			<h3 id="contains-item-">Contains(item)</h3>
-			<p>Indicates if the corrent collection has item.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>item</td>
-						<td><em>`0</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>true/false</p>
-			<h3 id="copyto-array-arrayindex-">CopyTo(array, arrayIndex)</h3>
-			<p>Copies items of the corrent collection to array starting at this index: arrayIndex</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>array</td>
-						<td><em>`0[]</em><br></td>
-					</tr>
-					<tr>
-						<td>arrayIndex</td>
-						<td><em>System.Int32</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Nothing.</p>
-			<h3 id="count">Count</h3>
-			<p>Counts items in the current collection.</p>
-			<h3 id="getenumerator">GetEnumerator</h3>
-			<p>Returns an enumerator that iterates through the List
-				<t>.</t>
-			</p>
-			<h4 id="returns">Returns</h4>
-			<p>A List
-				<t>.Enumerator for the List
+			<section class="content markdown-preview markdown-body" id="markdown-preview">
+				<h1 id="common">Common</h1>
+				<table>
+					<tbody>
+						<tr>
+							<td><a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a></td>
+							<td><a href="#comparisonrule">ComparisonRule</a></td>
+						</tr>
+						<tr>
+							<td><a href="#icomparablecollection\`1">IComparableCollection`1</a></td>
+							<td><a href="#icomparisondata">IComparisonData</a></td>
+						</tr>
+						<tr>
+							<td><a href="#commonserviceprovider">CommonServiceProvider</a></td>
+							<td><a href="#assemblyasglobalsettingrepository">AssemblyAsGlobalSettingRepository</a></td>
+						</tr>
+						<tr>
+							<td><a href="#badappsettingexception">BadAppSettingException</a></td>
+							<td><a href="#globalsetting">GlobalSetting</a></td>
+						</tr>
+						<tr>
+							<td><a href="#globalsettingreinitializeexception">GlobalSettingReinitializeException</a></td>
+							<td><a href="#missingappsettingexception">MissingAppSettingException</a></td>
+						</tr>
+						<tr>
+							<td><a href="#aes">AES</a></td>
+							<td><a href="#decryptionexception">DecryptionException</a></td>
+						</tr>
+						<tr>
+							<td><a href="#exceptionmessages">ExceptionMessages</a></td>
+							<td><a href="#arrayextensions">ArrayExtensions</a></td>
+						</tr>
+						<tr>
+							<td><a href="#datasetextensions">DataSetExtensions</a></td>
+							<td><a href="#datatableextension">DataTableExtension</a></td>
+						</tr>
+						<tr>
+							<td><a href="#datetimeextensions">DateTimeExtensions</a></td>
+							<td><a href="#ienumerableextensions">IEnumerableExtensions</a></td>
+						</tr>
+						<tr>
+							<td><a href="#objectextensions">ObjectExtensions</a></td>
+							<td><a href="#stringextensions">StringExtensions</a></td>
+						</tr>
+						<tr>
+							<td><a href="#typeextensions">TypeExtensions</a></td>
+							<td><a href="#base64helper">Base64Helper</a></td>
+						</tr>
+						<tr>
+							<td><a href="#csvhelper">CsvHelper</a></td>
+							<td><a href="#enumhelper">EnumHelper</a></td>
+						</tr>
+						<tr>
+							<td><a href="#mailhelper">MailHelper</a></td>
+							<td><a href="#stringhelper">StringHelper</a></td>
+						</tr>
+						<tr>
+							<td><a href="#xmlhelper">XmlHelper</a></td>
+							<td><a href="#xmltransformationexception">XmlTransformationException</a></td>
+						</tr>
+						<tr>
+							<td><a href="#logentry">LogEntry</a></td>
+							<td><a href="#threaddata">ThreadData</a></td>
+						</tr>
+						<tr>
+							<td><a href="#loglevel">LogLevel</a></td>
+							<td><a href="#logmanager">LogManager</a></td>
+						</tr>
+						<tr>
+							<td><a href="#manager">Manager</a></td>
+							<td><a href="#memorycachemanager\`1">MemoryCacheManager`1</a></td>
+						</tr>
+						<tr>
+							<td><a href="#morethanoneobjectfoundexception\`1">MoreThanOneObjectFoundException`1</a></td>
+							<td><a href="#objectnotfoundexception\`1">ObjectNotFoundException`1</a></td>
+						</tr>
+						<tr>
+							<td><a href="#outofrangeexception">OutOfRangeException</a></td>
+							<td><a href="#servicenotfoundexception">ServiceNotFoundException</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="comparablecollectionbase-1">ComparableCollectionBase`1</h2>
+				<p>Encapsulates member for ComparableCollectionBase abstarct class. Inherited classes from this class can represent a collection
+					of T which can be compaired with anothe collection of the same type.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<h3 id="constructor">Constructor</h3>
+				<p>Base Initializer.</p>
+				<h3 id="add-item-">Add(item)</h3>
+				<p>Adds a new item of T to the corrent collection.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>item</td>
+							<td><em>`0</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Nothing.</p>
+				<h3 id="add-listoft-">Add(listOfT)</h3>
+				<p>Adds a new series of T to the corrent collection.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Nothing.</p>
+				<h3 id="belongsto-listoft-">BelongsTo(listOfT)</h3>
+				<p>Indicates if the current collection contains listOfT by using <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>true/fasle</p>
+				<h3 id="clear">Clear</h3>
+				<p>Clears the current collection.</p>
+				<h4 id="returns">Returns</h4>
+				<p>Nothing.</p>
+				<h3 id="comparisonrule">ComparisonRule</h3>
+				<p>Gets or sets Comparison Rule.</p>
+				<h4 id="value">Value</h4>
+				<p>Comparison Rule.</p>
+				<h3 id="contains-item-">Contains(item)</h3>
+				<p>Indicates if the corrent collection has item.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>item</td>
+							<td><em>`0</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>true/false</p>
+				<h3 id="copyto-array-arrayindex-">CopyTo(array, arrayIndex)</h3>
+				<p>Copies items of the corrent collection to array starting at this index: arrayIndex</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>array</td>
+							<td><em>`0[]</em><br></td>
+						</tr>
+						<tr>
+							<td>arrayIndex</td>
+							<td><em>System.Int32</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Nothing.</p>
+				<h3 id="count">Count</h3>
+				<p>Counts items in the current collection.</p>
+				<h3 id="getenumerator">GetEnumerator</h3>
+				<p>Returns an enumerator that iterates through the List
 					<t>.</t>
-				</t>
-			</p>
-			<h3 id="has-listoft-">Has(listOfT)</h3>
-			<p>Indicates if the current collection contains listOfT by using <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a></p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>true/false</p>
-			<h3 id="isreadonly">IsReadOnly</h3>
-			<p>Indicates if the collection is readonly.</p>
-			<h4 id="value">Value</h4>
-			<p>Always false!</p>
-			<h3 id="item-system-int32-">Item(System.Int32)</h3>
-			<p>Indexes an object of T in the current collection.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>index</td>
-						<td><em>Unknown type</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>An item of T.</p>
-			<h3 id="remove-item-">Remove(item)</h3>
-			<p>Removes an item from the collection.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>item</td>
-						<td><em>`0</em><br>The object to remove from the current collection. The value can be null for reference types.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>true if item is successfully removed; otherwise, false. This method also returns false if item was not found in the collection.</p>
-			<h3 id="system-collections-ienumerable-getenumerator">System#Collections#IEnumerable#GetEnumerator</h3>
-			<p>Returns an enumerator that iterates through the List
-				<t>. Implementation for <a href="#system.collections.ienumerable">System.Collections.IEnumerable</a>.</t>
-			</p>
-			<h4 id="returns">Returns</h4>
-			<p>A List
-				<t>.Enumerator for the List
-					<t>.</t>
-				</t>
-			</p>
-			<h3 id="x">X</h3>
-			<p>Gets or set a number which might be used by the associated <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a>.</p>
-			<h4 id="value">Value</h4>
-			<p>A number which might be used by the associated <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a>.</p>
-			<h2 id="comparisonrule">ComparisonRule</h2>
-			<p>Specifies different comparison rule for comparing two lists.</p>
-			<h3 id="allof">AllOf</h3>
-			<p>First list contains all of the items of the second list.</p>
-			<h3 id="anyof">AnyOf</h3>
-			<p>First list cotains at list one item that the second list also has it.</p>
-			<h3 id="exactlythesame">ExactlyTheSame</h3>
-			<p>Lists have exactly the same items.</p>
-			<h3 id="exactlyxof">ExactlyXof</h3>
-			<p>First list contains exactly X items of the second list. X is defined in <a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a>.</p>
-			<h3 id="lessthanxof">LessThanXof</h3>
-			<p>First list contains less than X items of the second list. X is defined in <a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a>.</p>
-			<h3 id="morethanxof">MoreThanXof</h3>
-			<p>First list contains more than X items of the second list. X is defined in <a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a>.</p>
-			<h3 id="noneof">NoneOf</h3>
-			<p>Lists have no item in common.</p>
-			<h2 id="icomparablecollection-1">IComparableCollection`1</h2>
-			<p>Defines necessary members for an inherited ComparableCollection class.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<h3 id="belongsto-listoft-">BelongsTo(listOfT)</h3>
-			<p>Indicates if the current collection contains listOfT by using <a href="#comparisonrule">ComparisonRule</a></p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h3 id="has-listoft-">Has(listOfT)</h3>
-			<p>Indicates if the current collection contains listOfT by using <a href="#comparisonrule">ComparisonRule</a></p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h3 id="item-system-int32-">Item(System.Int32)</h3>
-			<p>Indexes an object of T in the current collection.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>index</td>
-						<td><em>Unknown type</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h2 id="icomparisondata">IComparisonData</h2>
-			<p>Defines necessary members for any inherited class from <a href="#icomparisondata">IComparisonData</a>.</p>
-			<h3 id="comparisonrule">ComparisonRule</h3>
-			<p>Gets or sets Comparison Rule.</p>
-			<h3 id="x">X</h3>
-			<p>Gets or sets a number which might be used by <a href="#icomparisondata.comparisonrule">IComparisonData.ComparisonRule</a>.</p>
-			<h2 id="commonserviceprovider">CommonServiceProvider</h2>
-			<p>Default implementation of <a href="#icommonserviceprovider">ICommonServiceProvider</a> to contain and provide services
-				for the Common Library.</p>
-			<h3 id="addorreplace-1-services-">AddOrReplace``1(services)</h3>
-			<p>Adds or replaces a list of services for a type.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - The type that would be asked to be resolved.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>services</td>
-						<td><em>System.Collections.Generic.IEnumerable{System.Object}</em><br>&gt;The response list of objects when code asks for
-							resolving T.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="addorreplace-1-service-">AddOrReplace``1(service)</h3>
-			<p>Adds or replaces a service for a type.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - The type that would be asked to be resolved.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>service</td>
-						<td><em>System.Object</em><br>The response object when code asks for resolving T.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="assemblyasglobalsettingrepository">AssemblyAsGlobalSettingRepository</h2>
-			<p>Implementation for <a href="#iglobalsettingrepository">IGlobalSettingRepository</a> to get some of the Globall Settings
-				from an assembly.</p>
-			<h2 id="badappsettingexception">BadAppSettingException</h2>
-			<p>Exception when the value of an appSetting in Web.config (or App.config) cannot be converted to a desired type.</p>
-			<h3 id="constructor-applicationsettingkeyname-appsettingvalue-type-innerexception-">Constructor(applicationSettingKeyName, appSettingValue, type, innerException)</h3>
-			<p>Initializes a new instance of <a href="#badappsettingexception">BadAppSettingException</a>.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>applicationSettingKeyName</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>appSettingValue</td>
-						<td><em>System.Object</em><br></td>
-					</tr>
-					<tr>
-						<td>type</td>
-						<td><em>System.Type</em><br></td>
-					</tr>
-					<tr>
-						<td>innerException</td>
-						<td><em>System.Exception</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="expectedtype">ExpectedType</h3>
-			<p>Gets the expected type for the application setting.</p>
-			<h3 id="key">Key</h3>
-			<p>Gets the key for the application setting.</p>
-			<h3 id="value">Value</h3>
-			<p>Gets the value of the application setting.</p>
-			<h3 id="general-configuration-configfileasglobalsettingrepository-get">General.Configuration.ConfigFileAsGlobalSettingRepository.Get</h3>
-			<p>Gets the value showing if <a href="#globalsetting">GlobalSetting</a>.FriendlyCompanyName is expected as the prefix for
-				appSetting's key.</p>
-			<h2 id="globalsetting">GlobalSetting</h2>
-			<p>Encapsulates static properties to prived global application settings.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>For initializing members of this class, call <a href="#globalsetting">GlobalSetting</a>.Initialize() method at the starting
-				point of the application (such as Application_Start() method inside Global.asax.cs file).</p>
-			<h3 id="aeskey">AesKey</h3>
-			<p>Gets AES Key for <a href="#general.cryptography.aes">General.Cryptography.AES</a> Cryptography.</p>
-			<h4 id="value">Value</h4>
-			<p>AES Key</p>
-			<h3 id="applicationname">ApplicationName</h3>
-			<p>Gets the name of the current running application.</p>
-			<h4 id="value">Value</h4>
-			<p>The name of the current running application.</p>
-			<h3 id="companyname">CompanyName</h3>
-			<p>Gets the name of your company.</p>
-			<h4 id="value">Value</h4>
-			<p>The name of your company.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>CompanyName can be set in 2 ways: 1- Adding "CompanyName" key/value to the {appSettings} section of Web.config or App.config
-				of your application; 2- Setting [assembly: AssemblyCompany("Company Name")] in AssemblyInfo.cs.</p>
-			<h3 id="loglevel">LogLevel</h3>
-			<p>Gets the global log level</p>
-			<h4 id="value">Value</h4>
-			<p>AES Key</p>
-			<h3 id="memorycacheabsoluteexpiration">MemoryCacheAbsoluteExpiration</h3>
-			<p>Gets global number of seconds that for absolute expiration of memory cache.</p>
-			<h4 id="value">Value</h4>
-			<p>Global number of seconds that for absolute expiration of memory cache.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>Developer can override this value for an specific cache or globalle. <a href="#general.memorycachemanager\`1">General.MemoryCacheManager`1</a></p>
-			<h3 id="recaptcha2enable">Recaptcha2Enable</h3>
-			<p>Gets Google Recaptcha base URL.</p>
-			<h4 id="value">Value</h4>
-			<p>Google Recaptcha base URL</p>
-			<h3 id="recaptcha2privatekey">Recaptcha2PrivateKey</h3>
-			<p>Gets Google Recaptcha Private Key.</p>
-			<h4 id="value">Value</h4>
-			<p>Google Recaptcha Private Key</p>
-			<h3 id="recaptcha2publickey">Recaptcha2PublicKey</h3>
-			<p>Gets Google Recaptcha Public Key.</p>
-			<h4 id="value">Value</h4>
-			<p>Google Recaptcha Public Key</p>
-			<h3 id="recaptcha2url">Recaptcha2Url</h3>
-			<p>Gets Google Recaptcha base URL.</p>
-			<h4 id="value">Value</h4>
-			<p>Google Recaptcha base URL</p>
-			<h3 id="version">Version</h3>
-			<p>Gets version of the current application.</p>
-			<h4 id="value">Value</h4>
-			<p>The version of the current application.</p>
-			<h3 id="versionstring">VersionString</h3>
-			<p>Gets version of the current application in string.</p>
-			<h4 id="value">Value</h4>
-			<p>The version of the current application in string.</p>
-			<h2 id="globalsettingreinitializeexception">GlobalSettingReinitializeException</h2>
-			<p>Exception if <a href="#globalsettingbase">GlobalSettingBase</a>.Initialize() method call for the second time.</p>
-			<h2 id="missingappsettingexception">MissingAppSettingException</h2>
-			<p>Exception for a missing appSetting.</p>
-			<h3 id="constructor-missingelement-key-">Constructor(missingElement, key)</h3>
-			<p>Constructor of MissingAppSettingException.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>missingElement</td>
-						<td><em>System.String</em><br>Title of the missing element. E.g. "Application Name".</td>
-					</tr>
-					<tr>
-						<td>key</td>
-						<td><em>System.String</em><br>key that is missing from Web.config or App.config.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="aes">AES</h2>
-			<p>Encapsulates members to faciliates AES encryption and decryption.</p>
-			<h3 id="constructor-key-">Constructor(key)</h3>
-			<p>Creates a new instance of <a href="#aes">AES</a></p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>key</td>
-						<td><em>System.Byte[]</em><br>AES key</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="decrypt-cipherbytes-vector-">Decrypt(cipherBytes, vector)</h3>
-			<p>Decrypts cipherBytes by using <a href="#aes.key">AES.Key</a> and vector.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>cipherBytes</td>
-						<td><em>System.Byte[]</em><br>Encrypted data in byte array.</td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.Byte[]</em><br>AES vector(IV) in byte array.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Plain text.</p>
-			<h3 id="decrypt-ciphertext-splitter-">Decrypt(cipherText, splitter)</h3>
-			<p>Decrypts cipherText to plain text. The method assumes that cipherText is in this format: {vector string}{splitter char}{cipherText}
-				Sample: 193017219101214006208145014084217162137012222209:949389489834798704520978127843987470834087943609430879843790843</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>cipherText</td>
-						<td><em>System.String</em><br>Encrypted text.</td>
-					</tr>
-					<tr>
-						<td>splitter</td>
-						<td><em>System.Char</em><br>Separator character.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Plain text.</p>
-			<h3 id="decrypt-ciphertext-vector-">Decrypt(cipherText, vector)</h3>
-			<p>Decrypts cipherText.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>cipherText</td>
-						<td><em>System.String</em><br>Encrypted text.</td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.String</em><br>AES vector(IV).</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Plain text.</p>
-			<h3 id="default_iv_splitter">DEFAULT_IV_SPLITTER</h3>
-			<p>Gets default AES vector splitter.</p>
-			<h4 id="value">Value</h4>
-			<p>AES vector splitter.</p>
-			<h3 id="encrypt-plaintext-vector-">Encrypt(plainText, vector)</h3>
-			<p>Encrypts plainText and returns an encrypted byte array.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>plainText</td>
-						<td><em>System.String</em><br>Text to be encrypted.</td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.Byte[]@</em><br>The generated IV which is used to encrypt plainText and generate the result.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Encrypted byte array.</p>
-			<h3 id="encrypttostring-plaintext-vector-">EncryptToString(plainText, vector)</h3>
-			<p>Encrypts plainText and returns a string suitable for passing in a URL.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>plainText</td>
-						<td><em>System.String</em><br>Text to be encrypted.</td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.Byte[]@</em><br>Generated AES vector.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Encrypted text.</p>
-			<h3 id="encrypttostring-plaintext-splitter-">EncryptToString(plainText, splitter)</h3>
-			<p>Encrypts plainText and adds vector(IV) at the beginnig of result, using splitter as the separator.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>plainText</td>
-						<td><em>System.String</em><br>Text to be encrypted.</td>
-					</tr>
-					<tr>
-						<td>splitter</td>
-						<td><em>System.Char</em><br>The character that separate encrypted text and vector(IV).</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Encrypted text.</p>
-			<h3 id="encrypttostring-plaintext-vector-">EncryptToString(plainText, vector)</h3>
-			<p>Encrypts plainText and returns a string suitable for passing in a URL.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>plainText</td>
-						<td><em>System.String</em><br>Text to be encrypted.</td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.String@</em><br>Generated AES vector.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Encrypted text.</p>
-			<h3 id="key">Key</h3>
-			<p>Gets or sets a key for AES.</p>
-			<h4 id="value">Value</h4>
-			<p>Key for AES.</p>
-			<h3 id="trydecrypt-ciphertext-plaintext-splitter-">TryDecrypt(cipherText, plainText, splitter)</h3>
-			<p>Tries to decrypt cipherText. The method assumes that cipherText is in this format: {vector string}{splitter char}{cipherText}
-				Sample: 193017219101214006208145014084217162137012222209:949389489834798704520978127843987470834087943609430879843790843</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>cipherText</td>
-						<td><em>System.String</em><br>Encrypted text.</td>
-					</tr>
-					<tr>
-						<td>plainText</td>
-						<td><em>System.String@</em><br>Plain text result of decryption.</td>
-					</tr>
-					<tr>
-						<td>splitter</td>
-						<td><em>System.Char</em><br>Separator character.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>True if succeed; otherwise, false.</p>
-			<h3 id="validatekey-key-">ValidateKey(key)</h3>
-			<p>Validates AES key.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>key</td>
-						<td><em>System.Byte[]</em><br>AES key.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="decryptionexception">DecryptionException</h2>
-			<p>Decryption Exception.</p>
-			<h3 id="constructor-cipherbytes-vector-innerexception-">Constructor(cipherBytes, vector, innerException)</h3>
-			<p>Initializes a new instance of <a href="#decryptionexception">DecryptionException</a>.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>cipherBytes</td>
-						<td><em>System.Byte[]</em><br></td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.Byte[]</em><br></td>
-					</tr>
-					<tr>
-						<td>innerException</td>
-						<td><em>System.Exception</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="builderrormessage-cipherbytes-vector-">BuildErrorMessage(cipherBytes, vector)</h3>
-			<p>Builds the error message.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>cipherBytes</td>
-						<td><em>System.Byte[]</em><br></td>
-					</tr>
-					<tr>
-						<td>vector</td>
-						<td><em>System.Byte[]</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Error message</p>
-			<h2 id="exceptionmessages">ExceptionMessages</h2>
-			<p>A strongly-typed resource class, for looking up localized strings, etc.</p>
-			<h3 id="badappsettingexception">BadAppSettingException</h3>
-			<p>Looks up a localized string similar to The value of appSetting '{0}' is '{1}' which cannot be converted to the type '{2}'..</p>
-			<h3 id="companynamemissingexception">CompanyNameMissingException</h3>
-			<p>Looks up a localized string similar to Company Name cannot be found. Either add the company name to the [assembly: AssemblyCompany("")]
-				attribute of AssemblyInfo.cs or add a new item to the
-				<appsettings> node of Web.config (or App.config) with this key: "{0}"..</appsettings>
-			</p>
-			<h3 id="culture">Culture</h3>
-			<p>Overrides the current thread's CurrentUICulture property for all resource lookups using this strongly typed resource class.</p>
-			<h3 id="emptycollectionexception">EmptyCollectionException</h3>
-			<p>Looks up a localized string similar to EmptyCollectionException.</p>
-			<h3 id="globalsettingreinitializeexception">GlobalSettingReinitializeException</h3>
-			<p>Looks up a localized string similar to GlobalSetting cannot be re-initialized. Call
-				<see cref="GlobalSetting">.Initialize() method only one time at the starting point of the application (E.g. Application_Start() method inside Global.asax.cs
-					file)..
-				</see>
-			</p>
-			<h3 id="missingappsettingexception">MissingAppSettingException</h3>
-			<p>Looks up a localized string similar to "{0}" is not defined in the Application Setting collection. Add "{1}" to
-				<appsettings>
-					node of the application Web.config or App.config..</appsettings>
-			</p>
-			<h3 id="morethanoneobjectfoundexception">MoreThanOneObjectFoundException</h3>
-			<p>Looks up a localized string similar to MoreThanOneObjectFoundException.</p>
-			<h3 id="notrighttypevalidationerror">NotRightTypeValidationError</h3>
-			<p>Looks up a localized string similar to Not a right type..</p>
-			<h3 id="objectnotfoundexception">ObjectNotFoundException</h3>
-			<p>Looks up a localized string similar to ObjectNotFoundException.</p>
-			<h3 id="outofrangeexception">OutOfRangeException</h3>
-			<p>Looks up a localized string similar to OutOfRangeException.</p>
-			<h3 id="resourcemanager">ResourceManager</h3>
-			<p>Returns the cached ResourceManager instance used by this class.</p>
-			<h3 id="xmltransformationexception">XmlTransformationException</h3>
-			<p>Looks up a localized string similar to XmlTransformationException.</p>
-			<h2 id="arrayextensions">ArrayExtensions</h2>
-			<p>Encapsulates extentions methods for <a href="#system.array">System.Array</a> class.</p>
-			<h3 id="toarray-1-array-">ToArray``1(array)</h3>
-			<p>Converts this array to T.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - Type of arrya.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>array</td>
-						<td><em>System.Array</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Array.</p>
-			<h3 id="toarrayof-1-array-">ToArrayOf``1(array)</h3>
-			<p>Converts this array to array of T.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - Type of arrya.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>array</td>
-						<td><em>System.Array</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Array of type T</p>
-			<h2 id="datasetextensions">DataSetExtensions</h2>
-			<p>Contains extension methods for the <a href="#system.data.dataset">System.Data.DataSet</a> type.</p>
-			<h3 id="getxmlincludingnull-thisdataset-">GetXmlIncludingNull(thisDataSet)</h3>
-			<p>Gets XML string of this <a href="#system.data.dataset">System.Data.DataSet</a> including cells with <code>null</code>				value in the first row.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>thisDataSet</td>
-						<td><em>System.Data.DataSet</em><br>Current DataSet.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A XML string including cells with <code>null</code> value in the first row.</p>
-			<h2 id="datatableextension">DataTableExtension</h2>
-			<p>Contains extension methods to work on entities.</p>
-			<h3 id="convertrowstolist-1-datatable-conversion-">ConvertRowsToList``1(dataTable, conversion)</h3>
-			<p>Converts all <a href="#system.data.datatable.rows">System.Data.DataTable.Rows</a> of a <a href="#system.data.datatable">System.Data.DataTable</a>				to a List of T.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>dataTable</td>
-						<td><em>System.Data.DataTable</em><br></td>
-					</tr>
-					<tr>
-						<td>conversion</td>
-						<td><em>System.Converter{System.Data.DataRow,``0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A list of T.</p>
-			<h2 id="datetimeextensions">DateTimeExtensions</h2>
-			<p>An static class to contain DateTime extension methods.</p>
-			<h2 id="ienumerableextensions">IEnumerableExtensions</h2>
-			<h3 id="belongsto-1-thislistoft-comparingrule-listoft-x-">BelongsTo``1(thisListOfT, comparingRule, listOfT, X)</h3>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>thisListOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
-					</tr>
-					<tr>
-						<td>comparingRule</td>
-						<td><em>General.Collections.ComparisonRule</em><br></td>
-					</tr>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
-					</tr>
-					<tr>
-						<td>X</td>
-						<td><em>System.Int32</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h3 id="counequalitems-1-thislistoft-listoft-">CounEqualItems``1(thisListOfT, listOfT)</h3>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>thisListOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
-					</tr>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h3 id="foreach-1-source-action-">ForEach``1(source, action)</h3>
-			<p>Executes an action on each of source's items.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - Type</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>source</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br>Any IEnumerable{T}.</td>
-					</tr>
-					<tr>
-						<td>action</td>
-						<td><em>System.Action{``0}</em><br>An action to be executed on each item of source.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="has-1-thislistoft-comparingrule-listoft-x-">Has``1(thisListOfT, comparingRule, listOfT, X)</h3>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>thisListOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
-					</tr>
-					<tr>
-						<td>comparingRule</td>
-						<td><em>General.Collections.ComparisonRule</em><br></td>
-					</tr>
-					<tr>
-						<td>listOfT</td>
-						<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
-					</tr>
-					<tr>
-						<td>X</td>
-						<td><em>System.Int32</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h2 id="objectextensions">ObjectExtensions</h2>
-			<p>Encapsulates extentions methods for <a href="#system.object">System.Object</a> class.</p>
-			<h3 id="to-1-obj-">To``1(obj)</h3>
-			<p>An extension method to convert this <a href="#system.object">System.Object</a> to an instance of T.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - The type to convert to.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>obj</td>
-						<td><em>System.Object</em><br>This object.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>An instance of T.</p>
-			<h2 id="stringextensions">StringExtensions</h2>
-			<p>An static class to contain String extension methods.</p>
-			<h3 id="allindexesof-str-value-">AllIndexesOf(str, value)</h3>
-			<p>Returns a list of all positions of value inside this string str.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>str</td>
-						<td><em>System.String</em><br>This string.</td>
-					</tr>
-					<tr>
-						<td>value</td>
-						<td><em>System.String</em><br>A string.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>List of all positions of value inside this string str.</p>
-			<h3 id="tovalidfilename-str-">ToValidFileName(str)</h3>
-			<p>Returns a valid file name string of this string. It doesn't change the current string value.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>str</td>
-						<td><em>System.String</em><br>This string.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A valid file name string.</p>
-			<h3 id="trimspacesanddoublequotes-str-">TrimSpacesAndDoubleQuotes(str)</h3>
-			<p>Removes all leading and trailing white-space characters from the str.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>str</td>
-						<td><em>System.String</em><br>A string.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Cleaned up string.</p>
-			<h2 id="typeextensions">TypeExtensions</h2>
-			<p>Encapsulates extentions methods for <a href="#system.type">System.Type</a> class.</p>
-			<h3 id="getenumerabletype-type-">GetEnumerableType(type)</h3>
-			<p>Returns the Type of T, if type is of type <a href="#system.collections.generic.ienumerable\`1">System.Collections.Generic.IEnumerable`1</a>;
-				otherwise, returns null.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>type</td>
-						<td><em>System.Type</em><br>Any type that inherits from <a href="#system.collections.generic.ienumerable\`1">System.Collections.Generic.IEnumerable`1</a>							inteface.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>The Type of T, if type is of type <a href="#system.collections.generic.ienumerable\`1">System.Collections.Generic.IEnumerable`1</a>;
-				otherwise, returns null.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>Got it from: <a href="http://stackoverflow.com/a/1846690/538387">http://stackoverflow.com/a/1846690/538387</a></p>
-			<h3 id="general-helpers-appsettingshelper-get-1-appsettingkey-defaultvalue-">General.Helpers.AppSettingsHelper.Get``1(appSettingKey, defaultValue)</h3>
-			<p>Returns the value of an appSetting (appSettingKey) if it exist; if not, returns defaultValue</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>appSettingKey</td>
-						<td><em>System.String</em><br>Key of appSetting</td>
-					</tr>
-					<tr>
-						<td>defaultValue</td>
-						<td><em>System.Object</em><br>value to return if appSettingKey does not exist in application settings collection.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>The value of an appSetting if it exist; if not, returns defaultValue.</p>
-			<h3 id="general-helpers-appsettingshelper-get-1-appsettingkey-">General.Helpers.AppSettingsHelper.Get``1(appSettingKey)</h3>
-			<p>Returns the value of an appSetting (appSettingKey).</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>appSettingKey</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p><em>General.Configuration.MissingAppSettingException:</em> thrown if appSettingKey cannot be found in the Web.config (or
-				App.config).
-			</p>
-			<h2 id="base64helper">Base64Helper</h2>
-			<p>An static class to facilitate encoding/decoding to/from Base64.</p>
-			<h3 id="decodefrombase64-encodeddata-encoding-">DecodeFromBase64(encodedData, encoding)</h3>
-			<p>Returns a dencoded string from encodedData using encoding text encoding.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>encodedData</td>
-						<td><em>System.String</em><br>A base 64 encoded string.</td>
-					</tr>
-					<tr>
-						<td>encoding</td>
-						<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A string which is decoded from encodedData.</p>
-			<h3 id="decodefrombase64-encodeddata-">DecodeFromBase64(encodedData)</h3>
-			<p>Returns a dencoded string from encodedData using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>encodedData</td>
-						<td><em>System.String</em><br>A base 64 encoded string.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A string which is decoded from encodedData.</p>
-			<h3 id="decodefrombase64urlsafe-str-">DecodeFromBase64UrlSafe(str)</h3>
-			<p>Decode Base64 encoded string with URL and Filename Safe Alphabet using UTF-8.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>str</td>
-						<td><em>System.String</em><br>Base64 code</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>The decoded string.</p>
-			<h3 id="encodetobase64-username-password-encoding-">EncodeToBase64(username, password, encoding)</h3>
-			<p>Returns a Base64 encoded string of username and password using encoding text encoding. Return value is usually used for
-				Authorization field of HTTP request header.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>username</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>password</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>encoding</td>
-						<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A base64 encoded string.</p>
-			<h3 id="encodetobase64-username-password-">EncodeToBase64(username, password)</h3>
-			<p>Returns a Base64 encoded string of username and password using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>username</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>password</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="remarks">Remarks</h4>
-			<p>Return value is usually used for Authorization field of HTTP request header.</p>
-			<h4 id="returns">Returns</h4>
-			<p>A base64 encoded string.</p>
-			<h3 id="encodetobase64-toencode-encoding-">EncodeToBase64(toEncode, encoding)</h3>
-			<p>Returns a Base64 encoded string from toEncode using encoding text encoding.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>toEncode</td>
-						<td><em>System.String</em><br>A string for encoding.</td>
-					</tr>
-					<tr>
-						<td>encoding</td>
-						<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A base64 encoded string.</p>
-			<h3 id="encodetobase64-toencode-">EncodeToBase64(toEncode)</h3>
-			<p>Returns a Base64 encoded string from toEncode using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>toEncode</td>
-						<td><em>System.String</em><br>A string for encoding.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A base64 encoded string.</p>
-			<h3 id="encodetobase64urlsafe-encbuff-">EncodeToBase64UrlSafe(encBuff)</h3>
-			<p>Base 64 Encoding with URL and Filename Safe Alphabet using UTF-8 character set.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>encBuff</td>
-						<td><em>System.Byte[]</em><br>The origianl array of byte.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>The Base64 encoded string</p>
-			<h3 id="extractusernamepasswordfrombase64-encodeddata-username-password-">ExtractUsernamePasswordFromBase64(encodedData, username, password)</h3>
-			<p>Extracts username and password from a base64 encoded string using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>encodedData</td>
-						<td><em>System.String</em><br>A base 64 encoded string.</td>
-					</tr>
-					<tr>
-						<td>username</td>
-						<td><em>System.String@</em><br></td>
-					</tr>
-					<tr>
-						<td>password</td>
-						<td><em>System.String@</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="remarks">Remarks</h4>
-			<p>If HttpRequestHeaders.Authorization.Parameter is passed as encodedData, decoded username and password would be sent out
-				in username and password respectively.</p>
-			<h3 id="extractusernamepasswordfrombase64-encodeddata-encoding-username-password-">ExtractUsernamePasswordFromBase64(encodedData, encoding, username, password)</h3>
-			<p>Extracts username and password from a base64 encoded string using encoding text encoding.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>encodedData</td>
-						<td><em>System.String</em><br>A base 64 encoded string.</td>
-					</tr>
-					<tr>
-						<td>encoding</td>
-						<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
-					</tr>
-					<tr>
-						<td>username</td>
-						<td><em>System.String@</em><br></td>
-					</tr>
-					<tr>
-						<td>password</td>
-						<td><em>System.String@</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="remarks">Remarks</h4>
-			<p>If HttpRequestHeaders.Authorization.Parameter is passed as encodedData, decoded username and password would be sent out
-				in username and password respectively.</p>
-			<h2 id="csvhelper">CsvHelper</h2>
-			<p>Encapsulates functions in a static class to work with comma-separated values (CSV).</p>
-			<h3 id="readall-csvtext-">ReadAll(csvText)</h3>
-			<p>Reads all the lines of a CSV string and reaturns all of data in a list of string array.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>csvText</td>
-						<td><em>System.String</em><br>A string cotains comma-separated values (CSV), one line or multi lines.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>List of arrays of string.</p>
-			<h3 id="readline-csvline-">ReadLine(csvLine)</h3>
-			<p>Reads a line of a comma-separated values (CSV) and an array of string, each item holds a value, respectively.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>csvLine</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Arry of string.</p>
-			<h2 id="enumhelper">EnumHelper</h2>
-			<p>Contains static Enum helper methods.</p>
-			<h3 id="parse-1-value-">Parse``1(value)</h3>
-			<p>Converts passed value (either string or integer) to a value of type TEnum. TEnum must be an enumerator. value can be:
-				- A string value equal to one of the TEnum's item (e.g. "Sunday" or "sUndAy" while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>,
-				returns DayOfWeek.Sunday). - An integer value equal to one of the TEnum's item (e.g. 0 while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>,
-				returns DayOfWeek.Sunday). - A comma separated string value, if TEnum is decorated by <a href="#system.flagsattribute">System.FlagsAttribute</a>				(e.g. "None, RemoveEmptyEntries" or "noNE,removeemptyentries" while TEnum is <a href="#system.stringsplitoptions">System.StringSplitOptions</a>,
-				returns StringSplitOptions.None|StringSplitOptions.RemoveEmptyEntries)</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>TEnum - An enum type.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>value</td>
-						<td><em>System.Object</em><br>A string or integer value which has to convert to one of TEnum's item.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Equivalent TEnum item for value.</p>
-			<h3 id="tryparse-system-object-system-type-">TryParse(System.Object,System.Type)</h3>
-			<p>Tries to parse value to a valid member of enum enumType.</p>
-			<h4 id="returns">Returns</h4>
-			<p>A valid member of enum enumType.</p>
-			<h3 id="tryparse-1-value-defaultvalue-">TryParse``1(value, defaultValue)</h3>
-			<p>Tries to convert passed value (either string or integer) to a value of type TEnum. If the try fails, it returens given
-				defaultValue. TEnum must be an enumerator. value can be: - A string value equal to one of the TEnum's item (e.g. "Sunday"
-				or "sUndAy" while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>, returns DayOfWeek.Sunday). - An integer
-				value equal to one of the TEnum's item (e.g. 0 while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>, returns
-				DayOfWeek.Sunday). - A comma separated string value, if TEnum is decorated by <a href="#system.flagsattribute">System.FlagsAttribute</a>				(e.g. "None, RemoveEmptyEntries" or "noNE,removeemptyentries" while TEnum is <a href="#system.stringsplitoptions">System.StringSplitOptions</a>,
-				returns StringSplitOptions.None|StringSplitOptions.RemoveEmptyEntries)</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>TEnum - An enum type.</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>value</td>
-						<td><em>System.Object</em><br>A string or integer value which has to convert to one of TEnum's item.</td>
-					</tr>
-					<tr>
-						<td>defaultValue</td>
-						<td><em>``0</em><br>The default value.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Equivalent TEnum item for value.</p>
-			<h2 id="mailhelper">MailHelper</h2>
-			<p>Encapsulates helpful functions for working with e-mails.</p>
-			<h3 id="send-message-">Send(message)</h3>
-			<p>Sends an e-mail.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>message</td>
-						<td><em>System.Net.Mail.MailMessage</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="sendemail-toaddress-subject-messagebody-">SendEmail(toAddress, subject, messageBody)</h3>
-			<p>Sends an e-mail.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>toAddress</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>subject</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>messageBody</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="stringhelper">StringHelper</h2>
-			<p>Encapsulates extention methods for <a href="#system.string">System.String</a> type.</p>
-			<h3 id="bytearraytostring-bytearr-">ByteArrayToString(byteArr)</h3>
-			<p>Converts a byte array to a string. </p>
-			<h4 id="see-also">See also</h4>
-			<ul>
-				<li><a href="#stringhelper.stringtobytearray(system.string,system.char)">StringHelper.StringToByteArray(System.String,System.Char)</a>					Same comment as StrToByteArray(string). Normally the conversion would use an ASCII encoding in the other direction:
-					System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding(); return enc.GetString(byteArr);</li>
-			</ul>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>byteArr</td>
-						<td><em>System.Byte[]</em><br>An array of bytes.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>string</p>
-			<h3 id="splitinparts-str-partlength-">SplitInParts(str, partLength)</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>str</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>partLength</td>
-						<td><em>System.Int32</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h3 id="stringtobytearray-str-splitter-">StringToByteArray(str, splitter)</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>str</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>splitter</td>
-						<td><em>System.Char</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h2 id="xmlhelper">XmlHelper</h2>
-			<p>Encapsulates functions for helping work with XML data.</p>
-			<h3 id="transform-system-string-system-string-">Transform(System.String,System.String)</h3>
-			<p>Transforms and returns an XML (xmlString) by using an XSLT file from xsltPath.</p>
-			<h4 id="returns">Returns</h4>
-			<p>Transformed XML string.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>For more information about XML Transformation, read: - <a href="http://www.w3.org/TR/xslt">http://www.w3.org/TR/xslt</a>				- <a href="http://www.w3schools.com/xsl">http://www.w3schools.com/xsl</a> - <a href="http://msdn.microsoft.com/en-us/library/ms256069(v=vs.100).aspx">http://msdn.microsoft.com/en-us/library/ms256069(v=vs.100).aspx</a>				- <a href="http://forums.asp.net/t/1256636.aspx?Generating+HTML+Reports+in+C+with+XML+Data+">http://forums.asp.net/t/1256636.aspx?Generating+HTML+Reports+in+C+with+XML+Data+</a></p>
-			<h2 id="xmltransformationexception">XmlTransformationException</h2>
-			<p>Xml Transformation Exception.</p>
-			<h3 id="constructor-xmlstring-xsltpath-innerexception-">Constructor(xmlString, xsltPath, innerException)</h3>
-			<p>Initializes a new instance of <a href="#xmltransformationexception">XmlTransformationException</a></p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>xmlString</td>
-						<td><em>System.String</em><br>XML in string format.</td>
-					</tr>
-					<tr>
-						<td>xsltPath</td>
-						<td><em>System.String</em><br>Physical path to XSLT file.</td>
-					</tr>
-					<tr>
-						<td>innerException</td>
-						<td><em>System.Exception</em><br>Inner exception, is exists.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="builderrormessage-xmlstring-xsltpath-">BuildErrorMessage(xmlString, xsltPath)</h3>
-			<p>Builds and returns exception message for an <a href="#xmltransformationexception">XmlTransformationException</a> instance.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>xmlString</td>
-						<td><em>System.String</em><br>XML in string format.</td>
-					</tr>
-					<tr>
-						<td>xsltPath</td>
-						<td><em>System.String</em><br>Physical path to XSLT file.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Exception message for an <a href="#xmltransformationexception">XmlTransformationException</a> instance.</p>
-			<h3 id="general-icommonserviceprovider-getservice-1">General.ICommonServiceProvider.GetService``1</h3>
-			<p>Gets the service object of the specified type.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - The type of service object to get.</li>
-			</ul>
-			<h4 id="returns">Returns</h4>
-			<p>A service object of T.</p>
-			<h3 id="general-icommonserviceprovider-getservices-servicetype-">General.ICommonServiceProvider.GetServices(serviceType)</h3>
-			<p>Gets the list of service objects of the specified type.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>serviceType</td>
-						<td><em>System.Type</em><br>An object that specifies the type of service object to get.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>A list of service object of type serviceType.</p>
-			<h3 id="general-icommonserviceprovider-getservices-1">General.ICommonServiceProvider.GetServices``1</h3>
-			<p>Gets the list of service objects of the specified type.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - The type of service object to get.</li>
-			</ul>
-			<h4 id="returns">Returns</h4>
-			<p>A list of service objects of T.</p>
-			<h3 id="general-logmanagement-commonlogger-automaticallydisabled">General.LogManagement.CommonLogger.AutomaticallyDisabled</h3>
-			<p>Gets if Log Manager is automatically disabled.</p>
-			<h4 id="value">Value</h4>
-			<p>True if automatically disabled, otherwise false.</p>
-			<h3 id="general-logmanagement-commonlogger-savelog-logentry-">General.LogManagement.CommonLogger.SaveLog(logEntry)</h3>
-			<p>Save log to the target logging repository.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>logEntry</td>
-						<td><em>General.LogManagement.LogEntry</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="general-logmanagement-commonlogger-skiploggin-loglevel-">General.LogManagement.CommonLogger.SkipLoggin(logLevel)</h3>
-			<p>Returns if it should skip Logging.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>logLevel</td>
-						<td><em>General.LogManagement.LogLevel</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>True if should skip logging, otherwise false</p>
-			<h3 id="general-logmanagement-icommonlogger-log-loglevel-exception-message-methodname-classname-stackframeindex-">General.LogManagement.ICommonLogger.Log(logLevel, exception, message, methodName, className, stackFrameIndex)</h3>
-			<p>Logs an event to the log repository.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>logLevel</td>
-						<td><em>General.LogManagement.LogLevel</em><br></td>
-					</tr>
-					<tr>
-						<td>exception</td>
-						<td><em>System.Exception</em><br></td>
-					</tr>
-					<tr>
-						<td>message</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>methodName</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>className</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>stackFrameIndex</td>
-						<td><em>System.Int32</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="logentry">LogEntry</h2>
-			<p>Encapsoluate a log entry members.</p>
-			<h3 id="constructor">Constructor</h3>
-			<p>Default constructor of class.</p>
-			<h3 id="applicationname">ApplicationName</h3>
-			<p>Gets or sets Application name, from there this log entry was created.</p>
-			<h3 id="applicationversion">ApplicationVersion</h3>
-			<p>Gets or sets version of the application/assembly.</p>
-			<h3 id="classname">ClassName</h3>
-			<p>Gets or sets Class name, from there this log entry was created.</p>
-			<h3 id="date">Date</h3>
-			<p>Gets or sets the date the log is created.</p>
-			<h3 id="exception">Exception</h3>
-			<p>Gets or sets ExceptionData, if an exception causes this log.</p>
-			<h3 id="level">Level</h3>
-			<p>Severity level of the log.</p>
-			<h3 id="logid">LogID</h3>
-			<p>Gets Unique ID of the logEntry</p>
-			<h3 id="machinename">MachineName</h3>
-			<p>Gets or sets name of the coputer or server.</p>
-			<h3 id="message">Message</h3>
-			<p>Gets or sets text message of the log.</p>
-			<h3 id="methodname">MethodName</h3>
-			<p>Gets or sets Method name, from there this log entry was created.</p>
-			<h3 id="processid">ProcessID</h3>
-			<p>Gets or sets Process ID.</p>
-			<h3 id="stackframe">StackFrame</h3>
-			<p>Gets or sets Stack Frame.</p>
-			<h3 id="stacktrace">StackTrace</h3>
-			<p>Gets or sets the Stack Trace.</p>
-			<h3 id="thread">Thread</h3>
-			<p>Gets or sets ThreadData, containing part of Thread data when this log was created.</p>
-			<h2 id="threaddata">ThreadData</h2>
-			<p>Encapsulates some of a Thread data.</p>
-			<h3 id="constructor">Constructor</h3>
-			<p>Constructor of class.</p>
-			<h3 id="currentculture">CurrentCulture</h3>
-			<p>Gets or sets the culture of the Thread that this ThreadData is created based on.</p>
-			<h3 id="currentuiculture">CurrentUICulture</h3>
-			<p>Gets or sets UI Culture of the Thread that this ThreadData is created based on.</p>
-			<h3 id="equals-obj-">Equals(obj)</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>obj</td>
-						<td><em>System.Object</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<h3 id="managedthreadid">ManagedThreadId</h3>
-			<p>Gets or sets Thread ID of the Thread that this ThreadData is created based on.</p>
-			<h3 id="priority">Priority</h3>
-			<p>Gets or sets Priority of the Thread that this ThreadData is created based on.</p>
-			<h3 id="threadname">ThreadName</h3>
-			<p>Gets or sets Thread Name of the Thread that this ThreadData is created based on.</p>
-			<h3 id="threadstate">ThreadState</h3>
-			<p>Gets or sets state of the Thread that this ThreadData is created based on.</p>
-			<h3 id="general-logmanagement-logentry-threadidentity">General.LogManagement.LogEntry.ThreadIdentity</h3>
-			<p>Gets or sets Thread Identity.</p>
-			<h3 id="general-logmanagement-logentry-tostring">General.LogManagement.LogEntry.ToString</h3>
-			<p>Returns a string that represents the current instance of <a href="#general.logmanagement.logentry">General.LogManagement.LogEntry</a>.</p>
-			<h4 id="returns">Returns</h4>
-			<p>A string that represents the current object.</p>
-			<h3 id="general-logmanagement-logentry-windowsidentity">General.LogManagement.LogEntry.WindowsIdentity</h3>
-			<p>Gets or sets Windows Identity.</p>
-			<h2 id="loglevel">LogLevel</h2>
-			<p>Level of a log entry.</p>
-			<h3 id="debug">Debug</h3>
-			<p>Debugg Level Logging</p>
-			<h3 id="error">Error</h3>
-			<p>Page counter enumerator</p>
-			<h3 id="fatal">Fatal</h3>
-			<p>Fatal Level Logging</p>
-			<h3 id="info">Info</h3>
-			<p>Error Level Logging</p>
-			<h3 id="trace">Trace</h3>
-			<p>Service Level Logging</p>
-			<h3 id="warning">Warning</h3>
-			<p>Warning Level Logging</p>
-			<h2 id="logmanager">LogManager</h2>
-			<p>Encapsulates functionalities for logging.</p>
-			<h3 id="_appname">_appName</h3>
-			<p>The Application Name to be used for logging messages</p>
-			<h3 id="_isinitialized">_isInitialized</h3>
-			<p>Is LogManager ever Initialized?</p>
-			<h3 id="automaticallydisabled">AutomaticallyDisabled</h3>
-			<p>Gets if Log Manager is automatically disabled.</p>
-			<h4 id="value">Value</h4>
-			<p>True if automatically disabled, otherwise false.</p>
-			<h3 id="initialize-loggingproxy-">Initialize(loggingProxy)</h3>
-			<p>Initializes the LogManager.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>loggingProxy</td>
-						<td><em>General.LogManagement.ILoggingProxy</em><br>a logProxy object.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>True if succesfully initialized, otherwise false.</p>
-			<h3 id="initialize-applicationname-applicationversion-loggingproxies-">Initialize(applicationName, applicationVersion, loggingProxies)</h3>
-			<p>Initializes the LogManager.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>applicationName</td>
-						<td><em>System.String</em><br>Name of current application.</td>
-					</tr>
-					<tr>
-						<td>applicationVersion</td>
-						<td><em>System.String</em><br>Version of current application.</td>
-					</tr>
-					<tr>
-						<td>loggingProxies</td>
-						<td><em>System.Collections.Generic.IEnumerable{General.LogManagement.ILoggingProxy}</em><br>a list of logProxy objects.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>True if succesfully initialized, otherwise false.</p>
-			<h3 id="isinitialized">IsInitialized</h3>
-			<p>Gets if LogManager has already initialized.</p>
-			<h3 id="log-loglevel-exception-message-methodname-classname-stackframeindex-">Log(logLevel, exception, message, methodName, className, stackFrameIndex)</h3>
-			<p>Logs an event to the log repository.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>logLevel</td>
-						<td><em>General.LogManagement.LogLevel</em><br></td>
-					</tr>
-					<tr>
-						<td>exception</td>
-						<td><em>System.Exception</em><br></td>
-					</tr>
-					<tr>
-						<td>message</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>methodName</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>className</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>stackFrameIndex</td>
-						<td><em>System.Int32</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="savelog-logentry-">SaveLog(logEntry)</h3>
-			<p>Save log to the target logging repository.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>logEntry</td>
-						<td><em>General.LogManagement.LogEntry</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="skiploggin-loglevel-">SkipLoggin(logLevel)</h3>
-			<p>Returns if it should skip Logging.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>logLevel</td>
-						<td><em>General.LogManagement.LogLevel</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>True if should skip logging, otherwise false</p>
-			<h2 id="manager">Manager</h2>
-			<p>A singleton implementation to encapsulate necessary elements for the Common Library.</p>
-			<h3 id="globalsetting">GlobalSetting</h3>
-			<p>Gets a container of global settings by calling <a href="#manager">Manager</a>.Instance.ServiceProveder.Get().</p>
-			<h4 id="value">Value</h4>
-			<p>A container of global settings.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>Becareful if you want to set or make changes to this property. Many other classes and functions in the Common Library
-				use this property to get an initialized instance of <a href="#manager.globalsetting">Manager.GlobalSetting</a>.</p>
-			<h3 id="instance">Instance</h3>
-			<p>Gets the single and the only instance of the <a href="#manager">Manager</a>.</p>
-			<h3 id="serviceprovider">ServiceProvider</h3>
-			<p>Gets or sets a Service Provider for the Common library.</p>
-			<h4 id="value">Value</h4>
-			<p>A Service Provider for the Common library.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>Becareful if you want to set or make changes to this property. Many other classes and functions in the Common Library
-				use this property to get the Service Provider.</p>
-			<h2 id="memorycachemanager-1">MemoryCacheManager`1</h2>
-			<p>Encapsulates generic methods to implement in memory caching.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<h4 id="remarks">Remarks</h4>
-			<p>To implement a customized cache for a specific entity, create a derived class from this class. For instance: </p>
-			<pre><code>
+				</p>
+				<h4 id="returns">Returns</h4>
+				<p>A List
+					<t>.Enumerator for the List
+						<t>.</t>
+					</t>
+				</p>
+				<h3 id="has-listoft-">Has(listOfT)</h3>
+				<p>Indicates if the current collection contains listOfT by using <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>true/false</p>
+				<h3 id="isreadonly">IsReadOnly</h3>
+				<p>Indicates if the collection is readonly.</p>
+				<h4 id="value">Value</h4>
+				<p>Always false!</p>
+				<h3 id="item-system-int32-">Item(System.Int32)</h3>
+				<p>Indexes an object of T in the current collection.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>index</td>
+							<td><em>Unknown type</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>An item of T.</p>
+				<h3 id="remove-item-">Remove(item)</h3>
+				<p>Removes an item from the collection.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>item</td>
+							<td><em>`0</em><br>The object to remove from the current collection. The value can be null for reference types.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>true if item is successfully removed; otherwise, false. This method also returns false if item was not found in the collection.</p>
+				<h3 id="system-collections-ienumerable-getenumerator">System#Collections#IEnumerable#GetEnumerator</h3>
+				<p>Returns an enumerator that iterates through the List
+					<t>. Implementation for <a href="#system.collections.ienumerable">System.Collections.IEnumerable</a>.</t>
+				</p>
+				<h4 id="returns">Returns</h4>
+				<p>A List
+					<t>.Enumerator for the List
+						<t>.</t>
+					</t>
+				</p>
+				<h3 id="x">X</h3>
+				<p>Gets or set a number which might be used by the associated <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a>.</p>
+				<h4 id="value">Value</h4>
+				<p>A number which might be used by the associated <a href="#comparablecollectionbase\`1.comparisonrule">ComparableCollectionBase`1.ComparisonRule</a>.</p>
+				<h2 id="comparisonrule">ComparisonRule</h2>
+				<p>Specifies different comparison rule for comparing two lists.</p>
+				<h3 id="allof">AllOf</h3>
+				<p>First list contains all of the items of the second list.</p>
+				<h3 id="anyof">AnyOf</h3>
+				<p>First list cotains at list one item that the second list also has it.</p>
+				<h3 id="exactlythesame">ExactlyTheSame</h3>
+				<p>Lists have exactly the same items.</p>
+				<h3 id="exactlyxof">ExactlyXof</h3>
+				<p>First list contains exactly X items of the second list. X is defined in <a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a>.</p>
+				<h3 id="lessthanxof">LessThanXof</h3>
+				<p>First list contains less than X items of the second list. X is defined in <a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a>.</p>
+				<h3 id="morethanxof">MoreThanXof</h3>
+				<p>First list contains more than X items of the second list. X is defined in <a href="#comparablecollectionbase\`1">ComparableCollectionBase`1</a>.</p>
+				<h3 id="noneof">NoneOf</h3>
+				<p>Lists have no item in common.</p>
+				<h2 id="icomparablecollection-1">IComparableCollection`1</h2>
+				<p>Defines necessary members for an inherited ComparableCollection class.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<h3 id="belongsto-listoft-">BelongsTo(listOfT)</h3>
+				<p>Indicates if the current collection contains listOfT by using <a href="#comparisonrule">ComparisonRule</a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h3 id="has-listoft-">Has(listOfT)</h3>
+				<p>Indicates if the current collection contains listOfT by using <a href="#comparisonrule">ComparisonRule</a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{`0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h3 id="item-system-int32-">Item(System.Int32)</h3>
+				<p>Indexes an object of T in the current collection.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>index</td>
+							<td><em>Unknown type</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h2 id="icomparisondata">IComparisonData</h2>
+				<p>Defines necessary members for any inherited class from <a href="#icomparisondata">IComparisonData</a>.</p>
+				<h3 id="comparisonrule">ComparisonRule</h3>
+				<p>Gets or sets Comparison Rule.</p>
+				<h3 id="x">X</h3>
+				<p>Gets or sets a number which might be used by <a href="#icomparisondata.comparisonrule">IComparisonData.ComparisonRule</a>.</p>
+				<h2 id="commonserviceprovider">CommonServiceProvider</h2>
+				<p>Default implementation of <a href="#icommonserviceprovider">ICommonServiceProvider</a> to contain and provide services
+					for the Common Library.</p>
+				<h3 id="addorreplace-1-services-">AddOrReplace``1(services)</h3>
+				<p>Adds or replaces a list of services for a type.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - The type that would be asked to be resolved.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>services</td>
+							<td><em>System.Collections.Generic.IEnumerable{System.Object}</em><br>&gt;The response list of objects when code asks
+								for resolving T.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="addorreplace-1-service-">AddOrReplace``1(service)</h3>
+				<p>Adds or replaces a service for a type.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - The type that would be asked to be resolved.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>service</td>
+							<td><em>System.Object</em><br>The response object when code asks for resolving T.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="assemblyasglobalsettingrepository">AssemblyAsGlobalSettingRepository</h2>
+				<p>Implementation for <a href="#iglobalsettingrepository">IGlobalSettingRepository</a> to get some of the Globall Settings
+					from an assembly.</p>
+				<h2 id="badappsettingexception">BadAppSettingException</h2>
+				<p>Exception when the value of an appSetting in Web.config (or App.config) cannot be converted to a desired type.</p>
+				<h3 id="constructor-applicationsettingkeyname-appsettingvalue-type-innerexception-">Constructor(applicationSettingKeyName, appSettingValue, type, innerException)</h3>
+				<p>Initializes a new instance of <a href="#badappsettingexception">BadAppSettingException</a>.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>applicationSettingKeyName</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>appSettingValue</td>
+							<td><em>System.Object</em><br></td>
+						</tr>
+						<tr>
+							<td>type</td>
+							<td><em>System.Type</em><br></td>
+						</tr>
+						<tr>
+							<td>innerException</td>
+							<td><em>System.Exception</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="expectedtype">ExpectedType</h3>
+				<p>Gets the expected type for the application setting.</p>
+				<h3 id="key">Key</h3>
+				<p>Gets the key for the application setting.</p>
+				<h3 id="value">Value</h3>
+				<p>Gets the value of the application setting.</p>
+				<h3 id="general-configuration-configfileasglobalsettingrepository-get">General.Configuration.ConfigFileAsGlobalSettingRepository.Get</h3>
+				<p>Gets the value showing if <a href="#globalsetting">GlobalSetting</a>.FriendlyCompanyName is expected as the prefix for
+					appSetting's key.</p>
+				<h2 id="globalsetting">GlobalSetting</h2>
+				<p>Encapsulates static properties to prived global application settings.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>For initializing members of this class, call <a href="#globalsetting">GlobalSetting</a>.Initialize() method at the starting
+					point of the application (such as Application_Start() method inside Global.asax.cs file).</p>
+				<h3 id="aeskey">AesKey</h3>
+				<p>Gets AES Key for <a href="#general.cryptography.aes">General.Cryptography.AES</a> Cryptography.</p>
+				<h4 id="value">Value</h4>
+				<p>AES Key</p>
+				<h3 id="applicationname">ApplicationName</h3>
+				<p>Gets the name of the current running application.</p>
+				<h4 id="value">Value</h4>
+				<p>The name of the current running application.</p>
+				<h3 id="companyname">CompanyName</h3>
+				<p>Gets the name of your company.</p>
+				<h4 id="value">Value</h4>
+				<p>The name of your company.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>CompanyName can be set in 2 ways: 1- Adding "CompanyName" key/value to the {appSettings} section of Web.config or App.config
+					of your application; 2- Setting [assembly: AssemblyCompany("Company Name")] in AssemblyInfo.cs.</p>
+				<h3 id="loglevel">LogLevel</h3>
+				<p>Gets the global log level</p>
+				<h4 id="value">Value</h4>
+				<p>AES Key</p>
+				<h3 id="memorycacheabsoluteexpiration">MemoryCacheAbsoluteExpiration</h3>
+				<p>Gets global number of seconds that for absolute expiration of memory cache.</p>
+				<h4 id="value">Value</h4>
+				<p>Global number of seconds that for absolute expiration of memory cache.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>Developer can override this value for an specific cache or globalle. <a href="#general.memorycachemanager\`1">General.MemoryCacheManager`1</a></p>
+				<h3 id="recaptcha2enable">Recaptcha2Enable</h3>
+				<p>Gets Google Recaptcha base URL.</p>
+				<h4 id="value">Value</h4>
+				<p>Google Recaptcha base URL</p>
+				<h3 id="recaptcha2privatekey">Recaptcha2PrivateKey</h3>
+				<p>Gets Google Recaptcha Private Key.</p>
+				<h4 id="value">Value</h4>
+				<p>Google Recaptcha Private Key</p>
+				<h3 id="recaptcha2publickey">Recaptcha2PublicKey</h3>
+				<p>Gets Google Recaptcha Public Key.</p>
+				<h4 id="value">Value</h4>
+				<p>Google Recaptcha Public Key</p>
+				<h3 id="recaptcha2url">Recaptcha2Url</h3>
+				<p>Gets Google Recaptcha base URL.</p>
+				<h4 id="value">Value</h4>
+				<p>Google Recaptcha base URL</p>
+				<h3 id="version">Version</h3>
+				<p>Gets version of the current application.</p>
+				<h4 id="value">Value</h4>
+				<p>The version of the current application.</p>
+				<h3 id="versionstring">VersionString</h3>
+				<p>Gets version of the current application in string.</p>
+				<h4 id="value">Value</h4>
+				<p>The version of the current application in string.</p>
+				<h2 id="globalsettingreinitializeexception">GlobalSettingReinitializeException</h2>
+				<p>Exception if <a href="#globalsettingbase">GlobalSettingBase</a>.Initialize() method call for the second time.</p>
+				<h2 id="missingappsettingexception">MissingAppSettingException</h2>
+				<p>Exception for a missing appSetting.</p>
+				<h3 id="constructor-missingelement-key-">Constructor(missingElement, key)</h3>
+				<p>Constructor of MissingAppSettingException.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>missingElement</td>
+							<td><em>System.String</em><br>Title of the missing element. E.g. "Application Name".</td>
+						</tr>
+						<tr>
+							<td>key</td>
+							<td><em>System.String</em><br>key that is missing from Web.config or App.config.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="aes">AES</h2>
+				<p>Encapsulates members to faciliates AES encryption and decryption.</p>
+				<h3 id="constructor-key-">Constructor(key)</h3>
+				<p>Creates a new instance of <a href="#aes">AES</a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>key</td>
+							<td><em>System.Byte[]</em><br>AES key</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="decrypt-cipherbytes-vector-">Decrypt(cipherBytes, vector)</h3>
+				<p>Decrypts cipherBytes by using <a href="#aes.key">AES.Key</a> and vector.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cipherBytes</td>
+							<td><em>System.Byte[]</em><br>Encrypted data in byte array.</td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.Byte[]</em><br>AES vector(IV) in byte array.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Plain text.</p>
+				<h3 id="decrypt-ciphertext-splitter-">Decrypt(cipherText, splitter)</h3>
+				<p>Decrypts cipherText to plain text. The method assumes that cipherText is in this format: {vector string}{splitter char}{cipherText}
+					Sample: 193017219101214006208145014084217162137012222209:949389489834798704520978127843987470834087943609430879843790843</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cipherText</td>
+							<td><em>System.String</em><br>Encrypted text.</td>
+						</tr>
+						<tr>
+							<td>splitter</td>
+							<td><em>System.Char</em><br>Separator character.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Plain text.</p>
+				<h3 id="decrypt-ciphertext-vector-">Decrypt(cipherText, vector)</h3>
+				<p>Decrypts cipherText.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cipherText</td>
+							<td><em>System.String</em><br>Encrypted text.</td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.String</em><br>AES vector(IV).</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Plain text.</p>
+				<h3 id="default_iv_splitter">DEFAULT_IV_SPLITTER</h3>
+				<p>Gets default AES vector splitter.</p>
+				<h4 id="value">Value</h4>
+				<p>AES vector splitter.</p>
+				<h3 id="encrypt-plaintext-vector-">Encrypt(plainText, vector)</h3>
+				<p>Encrypts plainText and returns an encrypted byte array.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>plainText</td>
+							<td><em>System.String</em><br>Text to be encrypted.</td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.Byte[]@</em><br>The generated IV which is used to encrypt plainText and generate the result.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Encrypted byte array.</p>
+				<h3 id="encrypttostring-plaintext-vector-">EncryptToString(plainText, vector)</h3>
+				<p>Encrypts plainText and returns a string suitable for passing in a URL.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>plainText</td>
+							<td><em>System.String</em><br>Text to be encrypted.</td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.Byte[]@</em><br>Generated AES vector.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Encrypted text.</p>
+				<h3 id="encrypttostring-plaintext-splitter-">EncryptToString(plainText, splitter)</h3>
+				<p>Encrypts plainText and adds vector(IV) at the beginnig of result, using splitter as the separator.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>plainText</td>
+							<td><em>System.String</em><br>Text to be encrypted.</td>
+						</tr>
+						<tr>
+							<td>splitter</td>
+							<td><em>System.Char</em><br>The character that separate encrypted text and vector(IV).</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Encrypted text.</p>
+				<h3 id="encrypttostring-plaintext-vector-">EncryptToString(plainText, vector)</h3>
+				<p>Encrypts plainText and returns a string suitable for passing in a URL.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>plainText</td>
+							<td><em>System.String</em><br>Text to be encrypted.</td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.String@</em><br>Generated AES vector.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Encrypted text.</p>
+				<h3 id="key">Key</h3>
+				<p>Gets or sets a key for AES.</p>
+				<h4 id="value">Value</h4>
+				<p>Key for AES.</p>
+				<h3 id="trydecrypt-ciphertext-plaintext-splitter-">TryDecrypt(cipherText, plainText, splitter)</h3>
+				<p>Tries to decrypt cipherText. The method assumes that cipherText is in this format: {vector string}{splitter char}{cipherText}
+					Sample: 193017219101214006208145014084217162137012222209:949389489834798704520978127843987470834087943609430879843790843</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cipherText</td>
+							<td><em>System.String</em><br>Encrypted text.</td>
+						</tr>
+						<tr>
+							<td>plainText</td>
+							<td><em>System.String@</em><br>Plain text result of decryption.</td>
+						</tr>
+						<tr>
+							<td>splitter</td>
+							<td><em>System.Char</em><br>Separator character.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>True if succeed; otherwise, false.</p>
+				<h3 id="validatekey-key-">ValidateKey(key)</h3>
+				<p>Validates AES key.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>key</td>
+							<td><em>System.Byte[]</em><br>AES key.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="decryptionexception">DecryptionException</h2>
+				<p>Decryption Exception.</p>
+				<h3 id="constructor-cipherbytes-vector-innerexception-">Constructor(cipherBytes, vector, innerException)</h3>
+				<p>Initializes a new instance of <a href="#decryptionexception">DecryptionException</a>.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cipherBytes</td>
+							<td><em>System.Byte[]</em><br></td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.Byte[]</em><br></td>
+						</tr>
+						<tr>
+							<td>innerException</td>
+							<td><em>System.Exception</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="builderrormessage-cipherbytes-vector-">BuildErrorMessage(cipherBytes, vector)</h3>
+				<p>Builds the error message.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cipherBytes</td>
+							<td><em>System.Byte[]</em><br></td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td><em>System.Byte[]</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Error message</p>
+				<h2 id="exceptionmessages">ExceptionMessages</h2>
+				<p>A strongly-typed resource class, for looking up localized strings, etc.</p>
+				<h3 id="badappsettingexception">BadAppSettingException</h3>
+				<p>Looks up a localized string similar to The value of appSetting '{0}' is '{1}' which cannot be converted to the type '{2}'..</p>
+				<h3 id="companynamemissingexception">CompanyNameMissingException</h3>
+				<p>Looks up a localized string similar to Company Name cannot be found. Either add the company name to the [assembly: AssemblyCompany("")]
+					attribute of AssemblyInfo.cs or add a new item to the
+					<appsettings> node of Web.config (or App.config) with this key: "{0}"..</appsettings>
+				</p>
+				<h3 id="culture">Culture</h3>
+				<p>Overrides the current thread's CurrentUICulture property for all resource lookups using this strongly typed resource
+					class.</p>
+				<h3 id="emptycollectionexception">EmptyCollectionException</h3>
+				<p>Looks up a localized string similar to EmptyCollectionException.</p>
+				<h3 id="globalsettingreinitializeexception">GlobalSettingReinitializeException</h3>
+				<p>Looks up a localized string similar to GlobalSetting cannot be re-initialized. Call
+					<see cref="GlobalSetting">.Initialize() method only one time at the starting point of the application (E.g. Application_Start() method inside
+						Global.asax.cs file)..
+					</see>
+				</p>
+				<h3 id="missingappsettingexception">MissingAppSettingException</h3>
+				<p>Looks up a localized string similar to "{0}" is not defined in the Application Setting collection. Add "{1}" to
+					<appsettings>
+						node of the application Web.config or App.config..</appsettings>
+				</p>
+				<h3 id="morethanoneobjectfoundexception">MoreThanOneObjectFoundException</h3>
+				<p>Looks up a localized string similar to MoreThanOneObjectFoundException.</p>
+				<h3 id="notrighttypevalidationerror">NotRightTypeValidationError</h3>
+				<p>Looks up a localized string similar to Not a right type..</p>
+				<h3 id="objectnotfoundexception">ObjectNotFoundException</h3>
+				<p>Looks up a localized string similar to ObjectNotFoundException.</p>
+				<h3 id="outofrangeexception">OutOfRangeException</h3>
+				<p>Looks up a localized string similar to OutOfRangeException.</p>
+				<h3 id="resourcemanager">ResourceManager</h3>
+				<p>Returns the cached ResourceManager instance used by this class.</p>
+				<h3 id="xmltransformationexception">XmlTransformationException</h3>
+				<p>Looks up a localized string similar to XmlTransformationException.</p>
+				<h2 id="arrayextensions">ArrayExtensions</h2>
+				<p>Encapsulates extentions methods for <a href="#system.array">System.Array</a> class.</p>
+				<h3 id="toarray-1-array-">ToArray``1(array)</h3>
+				<p>Converts this array to T.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - Type of arrya.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>array</td>
+							<td><em>System.Array</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Array.</p>
+				<h3 id="toarrayof-1-array-">ToArrayOf``1(array)</h3>
+				<p>Converts this array to array of T.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - Type of arrya.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>array</td>
+							<td><em>System.Array</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Array of type T</p>
+				<h2 id="datasetextensions">DataSetExtensions</h2>
+				<p>Contains extension methods for the <a href="#system.data.dataset">System.Data.DataSet</a> type.</p>
+				<h3 id="getxmlincludingnull-thisdataset-">GetXmlIncludingNull(thisDataSet)</h3>
+				<p>Gets XML string of this <a href="#system.data.dataset">System.Data.DataSet</a> including cells with <code>null</code>					value in the first row.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>thisDataSet</td>
+							<td><em>System.Data.DataSet</em><br>Current DataSet.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A XML string including cells with <code>null</code> value in the first row.</p>
+				<h2 id="datatableextension">DataTableExtension</h2>
+				<p>Contains extension methods to work on entities.</p>
+				<h3 id="convertrowstolist-1-datatable-conversion-">ConvertRowsToList``1(dataTable, conversion)</h3>
+				<p>Converts all <a href="#system.data.datatable.rows">System.Data.DataTable.Rows</a> of a <a href="#system.data.datatable">System.Data.DataTable</a>					to a List of T.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>dataTable</td>
+							<td><em>System.Data.DataTable</em><br></td>
+						</tr>
+						<tr>
+							<td>conversion</td>
+							<td><em>System.Converter{System.Data.DataRow,``0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A list of T.</p>
+				<h2 id="datetimeextensions">DateTimeExtensions</h2>
+				<p>An static class to contain DateTime extension methods.</p>
+				<h2 id="ienumerableextensions">IEnumerableExtensions</h2>
+				<h3 id="belongsto-1-thislistoft-comparingrule-listoft-x-">BelongsTo``1(thisListOfT, comparingRule, listOfT, X)</h3>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>thisListOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
+						</tr>
+						<tr>
+							<td>comparingRule</td>
+							<td><em>General.Collections.ComparisonRule</em><br></td>
+						</tr>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td><em>System.Int32</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h3 id="counequalitems-1-thislistoft-listoft-">CounEqualItems``1(thisListOfT, listOfT)</h3>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>thisListOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
+						</tr>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h3 id="foreach-1-source-action-">ForEach``1(source, action)</h3>
+				<p>Executes an action on each of source's items.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - Type</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>source</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br>Any IEnumerable{T}.</td>
+						</tr>
+						<tr>
+							<td>action</td>
+							<td><em>System.Action{``0}</em><br>An action to be executed on each item of source.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="has-1-thislistoft-comparingrule-listoft-x-">Has``1(thisListOfT, comparingRule, listOfT, X)</h3>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>thisListOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
+						</tr>
+						<tr>
+							<td>comparingRule</td>
+							<td><em>General.Collections.ComparisonRule</em><br></td>
+						</tr>
+						<tr>
+							<td>listOfT</td>
+							<td><em>System.Collections.Generic.IEnumerable{``0}</em><br></td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td><em>System.Int32</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h2 id="objectextensions">ObjectExtensions</h2>
+				<p>Encapsulates extentions methods for <a href="#system.object">System.Object</a> class.</p>
+				<h3 id="to-1-obj-">To``1(obj)</h3>
+				<p>An extension method to convert this <a href="#system.object">System.Object</a> to an instance of T.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - The type to convert to.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>obj</td>
+							<td><em>System.Object</em><br>This object.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>An instance of T.</p>
+				<h2 id="stringextensions">StringExtensions</h2>
+				<p>An static class to contain String extension methods.</p>
+				<h3 id="allindexesof-str-value-">AllIndexesOf(str, value)</h3>
+				<p>Returns a list of all positions of value inside this string str.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>str</td>
+							<td><em>System.String</em><br>This string.</td>
+						</tr>
+						<tr>
+							<td>value</td>
+							<td><em>System.String</em><br>A string.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>List of all positions of value inside this string str.</p>
+				<h3 id="tovalidfilename-str-">ToValidFileName(str)</h3>
+				<p>Returns a valid file name string of this string. It doesn't change the current string value.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>str</td>
+							<td><em>System.String</em><br>This string.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A valid file name string.</p>
+				<h3 id="trimspacesanddoublequotes-str-">TrimSpacesAndDoubleQuotes(str)</h3>
+				<p>Removes all leading and trailing white-space characters from the str.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>str</td>
+							<td><em>System.String</em><br>A string.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Cleaned up string.</p>
+				<h2 id="typeextensions">TypeExtensions</h2>
+				<p>Encapsulates extentions methods for <a href="#system.type">System.Type</a> class.</p>
+				<h3 id="getenumerabletype-type-">GetEnumerableType(type)</h3>
+				<p>Returns the Type of T, if type is of type <a href="#system.collections.generic.ienumerable\`1">System.Collections.Generic.IEnumerable`1</a>;
+					otherwise, returns null.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>type</td>
+							<td><em>System.Type</em><br>Any type that inherits from <a href="#system.collections.generic.ienumerable\`1">System.Collections.Generic.IEnumerable`1</a>								inteface.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>The Type of T, if type is of type <a href="#system.collections.generic.ienumerable\`1">System.Collections.Generic.IEnumerable`1</a>;
+					otherwise, returns null.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>Got it from: <a href="http://stackoverflow.com/a/1846690/538387">http://stackoverflow.com/a/1846690/538387</a></p>
+				<h3 id="general-helpers-appsettingshelper-get-1-appsettingkey-defaultvalue-">General.Helpers.AppSettingsHelper.Get``1(appSettingKey, defaultValue)</h3>
+				<p>Returns the value of an appSetting (appSettingKey) if it exist; if not, returns defaultValue</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>appSettingKey</td>
+							<td><em>System.String</em><br>Key of appSetting</td>
+						</tr>
+						<tr>
+							<td>defaultValue</td>
+							<td><em>System.Object</em><br>value to return if appSettingKey does not exist in application settings collection.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>The value of an appSetting if it exist; if not, returns defaultValue.</p>
+				<h3 id="general-helpers-appsettingshelper-get-1-appsettingkey-">General.Helpers.AppSettingsHelper.Get``1(appSettingKey)</h3>
+				<p>Returns the value of an appSetting (appSettingKey).</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>appSettingKey</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p><em>General.Configuration.MissingAppSettingException:</em> thrown if appSettingKey cannot be found in the Web.config
+					(or App.config).
+				</p>
+				<h2 id="base64helper">Base64Helper</h2>
+				<p>An static class to facilitate encoding/decoding to/from Base64.</p>
+				<h3 id="decodefrombase64-encodeddata-encoding-">DecodeFromBase64(encodedData, encoding)</h3>
+				<p>Returns a dencoded string from encodedData using encoding text encoding.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>encodedData</td>
+							<td><em>System.String</em><br>A base 64 encoded string.</td>
+						</tr>
+						<tr>
+							<td>encoding</td>
+							<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A string which is decoded from encodedData.</p>
+				<h3 id="decodefrombase64-encodeddata-">DecodeFromBase64(encodedData)</h3>
+				<p>Returns a dencoded string from encodedData using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>encodedData</td>
+							<td><em>System.String</em><br>A base 64 encoded string.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A string which is decoded from encodedData.</p>
+				<h3 id="decodefrombase64urlsafe-str-">DecodeFromBase64UrlSafe(str)</h3>
+				<p>Decode Base64 encoded string with URL and Filename Safe Alphabet using UTF-8.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>str</td>
+							<td><em>System.String</em><br>Base64 code</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>The decoded string.</p>
+				<h3 id="encodetobase64-username-password-encoding-">EncodeToBase64(username, password, encoding)</h3>
+				<p>Returns a Base64 encoded string of username and password using encoding text encoding. Return value is usually used for
+					Authorization field of HTTP request header.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>username</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>encoding</td>
+							<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A base64 encoded string.</p>
+				<h3 id="encodetobase64-username-password-">EncodeToBase64(username, password)</h3>
+				<p>Returns a Base64 encoded string of username and password using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>username</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="remarks">Remarks</h4>
+				<p>Return value is usually used for Authorization field of HTTP request header.</p>
+				<h4 id="returns">Returns</h4>
+				<p>A base64 encoded string.</p>
+				<h3 id="encodetobase64-toencode-encoding-">EncodeToBase64(toEncode, encoding)</h3>
+				<p>Returns a Base64 encoded string from toEncode using encoding text encoding.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>toEncode</td>
+							<td><em>System.String</em><br>A string for encoding.</td>
+						</tr>
+						<tr>
+							<td>encoding</td>
+							<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A base64 encoded string.</p>
+				<h3 id="encodetobase64-toencode-">EncodeToBase64(toEncode)</h3>
+				<p>Returns a Base64 encoded string from toEncode using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>toEncode</td>
+							<td><em>System.String</em><br>A string for encoding.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A base64 encoded string.</p>
+				<h3 id="encodetobase64urlsafe-encbuff-">EncodeToBase64UrlSafe(encBuff)</h3>
+				<p>Base 64 Encoding with URL and Filename Safe Alphabet using UTF-8 character set.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>encBuff</td>
+							<td><em>System.Byte[]</em><br>The origianl array of byte.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>The Base64 encoded string</p>
+				<h3 id="extractusernamepasswordfrombase64-encodeddata-username-password-">ExtractUsernamePasswordFromBase64(encodedData, username, password)</h3>
+				<p>Extracts username and password from a base64 encoded string using default text encoding (<a href="#system.text.encoding.default">System.Text.Encoding.Default</a>).</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>encodedData</td>
+							<td><em>System.String</em><br>A base 64 encoded string.</td>
+						</tr>
+						<tr>
+							<td>username</td>
+							<td><em>System.String@</em><br></td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td><em>System.String@</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="remarks">Remarks</h4>
+				<p>If HttpRequestHeaders.Authorization.Parameter is passed as encodedData, decoded username and password would be sent out
+					in username and password respectively.</p>
+				<h3 id="extractusernamepasswordfrombase64-encodeddata-encoding-username-password-">ExtractUsernamePasswordFromBase64(encodedData, encoding, username, password)</h3>
+				<p>Extracts username and password from a base64 encoded string using encoding text encoding.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>encodedData</td>
+							<td><em>System.String</em><br>A base 64 encoded string.</td>
+						</tr>
+						<tr>
+							<td>encoding</td>
+							<td><em>System.Text.Encoding</em><br>A <a href="#system.text.encoding">System.Text.Encoding</a>class to do the encoding.</td>
+						</tr>
+						<tr>
+							<td>username</td>
+							<td><em>System.String@</em><br></td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td><em>System.String@</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="remarks">Remarks</h4>
+				<p>If HttpRequestHeaders.Authorization.Parameter is passed as encodedData, decoded username and password would be sent out
+					in username and password respectively.</p>
+				<h2 id="csvhelper">CsvHelper</h2>
+				<p>Encapsulates functions in a static class to work with comma-separated values (CSV).</p>
+				<h3 id="readall-csvtext-">ReadAll(csvText)</h3>
+				<p>Reads all the lines of a CSV string and reaturns all of data in a list of string array.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>csvText</td>
+							<td><em>System.String</em><br>A string cotains comma-separated values (CSV), one line or multi lines.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>List of arrays of string.</p>
+				<h3 id="readline-csvline-">ReadLine(csvLine)</h3>
+				<p>Reads a line of a comma-separated values (CSV) and an array of string, each item holds a value, respectively.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>csvLine</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Arry of string.</p>
+				<h2 id="enumhelper">EnumHelper</h2>
+				<p>Contains static Enum helper methods.</p>
+				<h3 id="parse-1-value-">Parse``1(value)</h3>
+				<p>Converts passed value (either string or integer) to a value of type TEnum. TEnum must be an enumerator. value can be:
+					- A string value equal to one of the TEnum's item (e.g. "Sunday" or "sUndAy" while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>,
+					returns DayOfWeek.Sunday). - An integer value equal to one of the TEnum's item (e.g. 0 while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>,
+					returns DayOfWeek.Sunday). - A comma separated string value, if TEnum is decorated by <a href="#system.flagsattribute">System.FlagsAttribute</a>					(e.g. "None, RemoveEmptyEntries" or "noNE,removeemptyentries" while TEnum is <a href="#system.stringsplitoptions">System.StringSplitOptions</a>,
+					returns StringSplitOptions.None|StringSplitOptions.RemoveEmptyEntries)</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>TEnum - An enum type.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>value</td>
+							<td><em>System.Object</em><br>A string or integer value which has to convert to one of TEnum's item.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Equivalent TEnum item for value.</p>
+				<h3 id="tryparse-system-object-system-type-">TryParse(System.Object,System.Type)</h3>
+				<p>Tries to parse value to a valid member of enum enumType.</p>
+				<h4 id="returns">Returns</h4>
+				<p>A valid member of enum enumType.</p>
+				<h3 id="tryparse-1-value-defaultvalue-">TryParse``1(value, defaultValue)</h3>
+				<p>Tries to convert passed value (either string or integer) to a value of type TEnum. If the try fails, it returens given
+					defaultValue. TEnum must be an enumerator. value can be: - A string value equal to one of the TEnum's item (e.g. "Sunday"
+					or "sUndAy" while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>, returns DayOfWeek.Sunday). - An integer
+					value equal to one of the TEnum's item (e.g. 0 while TEnum is <a href="#system.dayofweek">System.DayOfWeek</a>, returns
+					DayOfWeek.Sunday). - A comma separated string value, if TEnum is decorated by <a href="#system.flagsattribute">System.FlagsAttribute</a>					(e.g. "None, RemoveEmptyEntries" or "noNE,removeemptyentries" while TEnum is <a href="#system.stringsplitoptions">System.StringSplitOptions</a>,
+					returns StringSplitOptions.None|StringSplitOptions.RemoveEmptyEntries)</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>TEnum - An enum type.</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>value</td>
+							<td><em>System.Object</em><br>A string or integer value which has to convert to one of TEnum's item.</td>
+						</tr>
+						<tr>
+							<td>defaultValue</td>
+							<td><em>``0</em><br>The default value.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Equivalent TEnum item for value.</p>
+				<h2 id="mailhelper">MailHelper</h2>
+				<p>Encapsulates helpful functions for working with e-mails.</p>
+				<h3 id="send-message-">Send(message)</h3>
+				<p>Sends an e-mail.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>message</td>
+							<td><em>System.Net.Mail.MailMessage</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="sendemail-toaddress-subject-messagebody-">SendEmail(toAddress, subject, messageBody)</h3>
+				<p>Sends an e-mail.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>toAddress</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>subject</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>messageBody</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="stringhelper">StringHelper</h2>
+				<p>Encapsulates extention methods for <a href="#system.string">System.String</a> type.</p>
+				<h3 id="bytearraytostring-bytearr-">ByteArrayToString(byteArr)</h3>
+				<p>Converts a byte array to a string. </p>
+				<h4 id="see-also">See also</h4>
+				<ul>
+					<li><a href="#stringhelper.stringtobytearray(system.string,system.char)">StringHelper.StringToByteArray(System.String,System.Char)</a>						Same comment as StrToByteArray(string). Normally the conversion would use an ASCII encoding in the other direction:
+						System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding(); return enc.GetString(byteArr);</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>byteArr</td>
+							<td><em>System.Byte[]</em><br>An array of bytes.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>string</p>
+				<h3 id="splitinparts-str-partlength-">SplitInParts(str, partLength)</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>str</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>partLength</td>
+							<td><em>System.Int32</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h3 id="stringtobytearray-str-splitter-">StringToByteArray(str, splitter)</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>str</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>splitter</td>
+							<td><em>System.Char</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h2 id="xmlhelper">XmlHelper</h2>
+				<p>Encapsulates functions for helping work with XML data.</p>
+				<h3 id="transform-system-string-system-string-">Transform(System.String,System.String)</h3>
+				<p>Transforms and returns an XML (xmlString) by using an XSLT file from xsltPath.</p>
+				<h4 id="returns">Returns</h4>
+				<p>Transformed XML string.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>For more information about XML Transformation, read: - <a href="http://www.w3.org/TR/xslt">http://www.w3.org/TR/xslt</a>					- <a href="http://www.w3schools.com/xsl">http://www.w3schools.com/xsl</a> - <a href="http://msdn.microsoft.com/en-us/library/ms256069(v=vs.100).aspx">http://msdn.microsoft.com/en-us/library/ms256069(v=vs.100).aspx</a>					- <a href="http://forums.asp.net/t/1256636.aspx?Generating+HTML+Reports+in+C+with+XML+Data+">http://forums.asp.net/t/1256636.aspx?Generating+HTML+Reports+in+C+with+XML+Data+</a></p>
+				<h2 id="xmltransformationexception">XmlTransformationException</h2>
+				<p>Xml Transformation Exception.</p>
+				<h3 id="constructor-xmlstring-xsltpath-innerexception-">Constructor(xmlString, xsltPath, innerException)</h3>
+				<p>Initializes a new instance of <a href="#xmltransformationexception">XmlTransformationException</a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>xmlString</td>
+							<td><em>System.String</em><br>XML in string format.</td>
+						</tr>
+						<tr>
+							<td>xsltPath</td>
+							<td><em>System.String</em><br>Physical path to XSLT file.</td>
+						</tr>
+						<tr>
+							<td>innerException</td>
+							<td><em>System.Exception</em><br>Inner exception, is exists.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="builderrormessage-xmlstring-xsltpath-">BuildErrorMessage(xmlString, xsltPath)</h3>
+				<p>Builds and returns exception message for an <a href="#xmltransformationexception">XmlTransformationException</a> instance.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>xmlString</td>
+							<td><em>System.String</em><br>XML in string format.</td>
+						</tr>
+						<tr>
+							<td>xsltPath</td>
+							<td><em>System.String</em><br>Physical path to XSLT file.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Exception message for an <a href="#xmltransformationexception">XmlTransformationException</a> instance.</p>
+				<h3 id="general-icommonserviceprovider-getservice-1">General.ICommonServiceProvider.GetService``1</h3>
+				<p>Gets the service object of the specified type.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - The type of service object to get.</li>
+				</ul>
+				<h4 id="returns">Returns</h4>
+				<p>A service object of T.</p>
+				<h3 id="general-icommonserviceprovider-getservices-servicetype-">General.ICommonServiceProvider.GetServices(serviceType)</h3>
+				<p>Gets the list of service objects of the specified type.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>serviceType</td>
+							<td><em>System.Type</em><br>An object that specifies the type of service object to get.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>A list of service object of type serviceType.</p>
+				<h3 id="general-icommonserviceprovider-getservices-1">General.ICommonServiceProvider.GetServices``1</h3>
+				<p>Gets the list of service objects of the specified type.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - The type of service object to get.</li>
+				</ul>
+				<h4 id="returns">Returns</h4>
+				<p>A list of service objects of T.</p>
+				<h3 id="general-logmanagement-commonlogger-automaticallydisabled">General.LogManagement.CommonLogger.AutomaticallyDisabled</h3>
+				<p>Gets if Log Manager is automatically disabled.</p>
+				<h4 id="value">Value</h4>
+				<p>True if automatically disabled, otherwise false.</p>
+				<h3 id="general-logmanagement-commonlogger-savelog-logentry-">General.LogManagement.CommonLogger.SaveLog(logEntry)</h3>
+				<p>Save log to the target logging repository.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>logEntry</td>
+							<td><em>General.LogManagement.LogEntry</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="general-logmanagement-commonlogger-skiploggin-loglevel-">General.LogManagement.CommonLogger.SkipLoggin(logLevel)</h3>
+				<p>Returns if it should skip Logging.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>logLevel</td>
+							<td><em>General.LogManagement.LogLevel</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>True if should skip logging, otherwise false</p>
+				<h3 id="general-logmanagement-icommonlogger-log-loglevel-exception-message-methodname-classname-stackframeindex-">General.LogManagement.ICommonLogger.Log(logLevel, exception, message, methodName, className, stackFrameIndex)</h3>
+				<p>Logs an event to the log repository.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>logLevel</td>
+							<td><em>General.LogManagement.LogLevel</em><br></td>
+						</tr>
+						<tr>
+							<td>exception</td>
+							<td><em>System.Exception</em><br></td>
+						</tr>
+						<tr>
+							<td>message</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>methodName</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>className</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>stackFrameIndex</td>
+							<td><em>System.Int32</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="logentry">LogEntry</h2>
+				<p>Encapsoluate a log entry members.</p>
+				<h3 id="constructor">Constructor</h3>
+				<p>Default constructor of class.</p>
+				<h3 id="applicationname">ApplicationName</h3>
+				<p>Gets or sets Application name, from there this log entry was created.</p>
+				<h3 id="applicationversion">ApplicationVersion</h3>
+				<p>Gets or sets version of the application/assembly.</p>
+				<h3 id="classname">ClassName</h3>
+				<p>Gets or sets Class name, from there this log entry was created.</p>
+				<h3 id="date">Date</h3>
+				<p>Gets or sets the date the log is created.</p>
+				<h3 id="exception">Exception</h3>
+				<p>Gets or sets ExceptionData, if an exception causes this log.</p>
+				<h3 id="level">Level</h3>
+				<p>Severity level of the log.</p>
+				<h3 id="logid">LogID</h3>
+				<p>Gets Unique ID of the logEntry</p>
+				<h3 id="machinename">MachineName</h3>
+				<p>Gets or sets name of the coputer or server.</p>
+				<h3 id="message">Message</h3>
+				<p>Gets or sets text message of the log.</p>
+				<h3 id="methodname">MethodName</h3>
+				<p>Gets or sets Method name, from there this log entry was created.</p>
+				<h3 id="processid">ProcessID</h3>
+				<p>Gets or sets Process ID.</p>
+				<h3 id="stackframe">StackFrame</h3>
+				<p>Gets or sets Stack Frame.</p>
+				<h3 id="stacktrace">StackTrace</h3>
+				<p>Gets or sets the Stack Trace.</p>
+				<h3 id="thread">Thread</h3>
+				<p>Gets or sets ThreadData, containing part of Thread data when this log was created.</p>
+				<h2 id="threaddata">ThreadData</h2>
+				<p>Encapsulates some of a Thread data.</p>
+				<h3 id="constructor">Constructor</h3>
+				<p>Constructor of class.</p>
+				<h3 id="currentculture">CurrentCulture</h3>
+				<p>Gets or sets the culture of the Thread that this ThreadData is created based on.</p>
+				<h3 id="currentuiculture">CurrentUICulture</h3>
+				<p>Gets or sets UI Culture of the Thread that this ThreadData is created based on.</p>
+				<h3 id="equals-obj-">Equals(obj)</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>obj</td>
+							<td><em>System.Object</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<h3 id="managedthreadid">ManagedThreadId</h3>
+				<p>Gets or sets Thread ID of the Thread that this ThreadData is created based on.</p>
+				<h3 id="priority">Priority</h3>
+				<p>Gets or sets Priority of the Thread that this ThreadData is created based on.</p>
+				<h3 id="threadname">ThreadName</h3>
+				<p>Gets or sets Thread Name of the Thread that this ThreadData is created based on.</p>
+				<h3 id="threadstate">ThreadState</h3>
+				<p>Gets or sets state of the Thread that this ThreadData is created based on.</p>
+				<h3 id="general-logmanagement-logentry-threadidentity">General.LogManagement.LogEntry.ThreadIdentity</h3>
+				<p>Gets or sets Thread Identity.</p>
+				<h3 id="general-logmanagement-logentry-tostring">General.LogManagement.LogEntry.ToString</h3>
+				<p>Returns a string that represents the current instance of <a href="#general.logmanagement.logentry">General.LogManagement.LogEntry</a>.</p>
+				<h4 id="returns">Returns</h4>
+				<p>A string that represents the current object.</p>
+				<h3 id="general-logmanagement-logentry-windowsidentity">General.LogManagement.LogEntry.WindowsIdentity</h3>
+				<p>Gets or sets Windows Identity.</p>
+				<h2 id="loglevel">LogLevel</h2>
+				<p>Level of a log entry.</p>
+				<h3 id="debug">Debug</h3>
+				<p>Debugg Level Logging</p>
+				<h3 id="error">Error</h3>
+				<p>Page counter enumerator</p>
+				<h3 id="fatal">Fatal</h3>
+				<p>Fatal Level Logging</p>
+				<h3 id="info">Info</h3>
+				<p>Error Level Logging</p>
+				<h3 id="trace">Trace</h3>
+				<p>Service Level Logging</p>
+				<h3 id="warning">Warning</h3>
+				<p>Warning Level Logging</p>
+				<h2 id="logmanager">LogManager</h2>
+				<p>Encapsulates functionalities for logging.</p>
+				<h3 id="_appname">_appName</h3>
+				<p>The Application Name to be used for logging messages</p>
+				<h3 id="_isinitialized">_isInitialized</h3>
+				<p>Is LogManager ever Initialized?</p>
+				<h3 id="automaticallydisabled">AutomaticallyDisabled</h3>
+				<p>Gets if Log Manager is automatically disabled.</p>
+				<h4 id="value">Value</h4>
+				<p>True if automatically disabled, otherwise false.</p>
+				<h3 id="initialize-loggingproxy-">Initialize(loggingProxy)</h3>
+				<p>Initializes the LogManager.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>loggingProxy</td>
+							<td><em>General.LogManagement.ILoggingProxy</em><br>a logProxy object.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>True if succesfully initialized, otherwise false.</p>
+				<h3 id="initialize-applicationname-applicationversion-loggingproxies-">Initialize(applicationName, applicationVersion, loggingProxies)</h3>
+				<p>Initializes the LogManager.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>applicationName</td>
+							<td><em>System.String</em><br>Name of current application.</td>
+						</tr>
+						<tr>
+							<td>applicationVersion</td>
+							<td><em>System.String</em><br>Version of current application.</td>
+						</tr>
+						<tr>
+							<td>loggingProxies</td>
+							<td><em>System.Collections.Generic.IEnumerable{General.LogManagement.ILoggingProxy}</em><br>a list of logProxy objects.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>True if succesfully initialized, otherwise false.</p>
+				<h3 id="isinitialized">IsInitialized</h3>
+				<p>Gets if LogManager has already initialized.</p>
+				<h3 id="log-loglevel-exception-message-methodname-classname-stackframeindex-">Log(logLevel, exception, message, methodName, className, stackFrameIndex)</h3>
+				<p>Logs an event to the log repository.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>logLevel</td>
+							<td><em>General.LogManagement.LogLevel</em><br></td>
+						</tr>
+						<tr>
+							<td>exception</td>
+							<td><em>System.Exception</em><br></td>
+						</tr>
+						<tr>
+							<td>message</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>methodName</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>className</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>stackFrameIndex</td>
+							<td><em>System.Int32</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="savelog-logentry-">SaveLog(logEntry)</h3>
+				<p>Save log to the target logging repository.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>logEntry</td>
+							<td><em>General.LogManagement.LogEntry</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="skiploggin-loglevel-">SkipLoggin(logLevel)</h3>
+				<p>Returns if it should skip Logging.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>logLevel</td>
+							<td><em>General.LogManagement.LogLevel</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>True if should skip logging, otherwise false</p>
+				<h2 id="manager">Manager</h2>
+				<p>A singleton implementation to encapsulate necessary elements for the Common Library.</p>
+				<h3 id="globalsetting">GlobalSetting</h3>
+				<p>Gets a container of global settings by calling <a href="#manager">Manager</a>.Instance.ServiceProveder.Get().</p>
+				<h4 id="value">Value</h4>
+				<p>A container of global settings.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>Becareful if you want to set or make changes to this property. Many other classes and functions in the Common Library
+					use this property to get an initialized instance of <a href="#manager.globalsetting">Manager.GlobalSetting</a>.</p>
+				<h3 id="instance">Instance</h3>
+				<p>Gets the single and the only instance of the <a href="#manager">Manager</a>.</p>
+				<h3 id="serviceprovider">ServiceProvider</h3>
+				<p>Gets or sets a Service Provider for the Common library.</p>
+				<h4 id="value">Value</h4>
+				<p>A Service Provider for the Common library.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>Becareful if you want to set or make changes to this property. Many other classes and functions in the Common Library
+					use this property to get the Service Provider.</p>
+				<h2 id="memorycachemanager-1">MemoryCacheManager`1</h2>
+				<p>Encapsulates generic methods to implement in memory caching.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<h4 id="remarks">Remarks</h4>
+				<p>To implement a customized cache for a specific entity, create a derived class from this class. For instance: </p>
+				<pre><code>
                  public sealed class MyEntityMemoryCacheManager : MemoryCacheManager{MyEntity}
                  {
                      public static void Set(MyEntity entity, CacheItemPolicy policy)
@@ -2069,157 +2062,156 @@
                      }
                  }
 </code></pre>
-			<h3 id="defaultglobalabsoluteexpiration">DefaultGlobalAbsoluteExpiration</h3>
-			<p>Gets or sets default global absolute expiration.</p>
-			<h4 id="remarks">Remarks</h4>
-			<p>If no policy pass to the GenericSet() methos, and the value of this field is not zero, a new <a href="#system.runtime.caching.cacheitempolicy">System.Runtime.Caching.CacheItemPolicy</a>				with AbsoluteExpiration equals to the value of this field will be assign to the cached entity.</p>
-			<h3 id="genericget-keys-">GenericGet(keys)</h3>
-			<p>Gets chahed value for keys, if there's any in the memory cache.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>keys</td>
-						<td><em>System.Object[]</em><br>Values to be used for creating a unique cache key.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h4 id="returns">Returns</h4>
-			<p>Chahed value, if there's any; otherwise, null.</p>
-			<h3 id="genericset-entity-policy-keys-">GenericSet(entity, policy, keys)</h3>
-			<p>Saves entity in the memory cache.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>entity</td>
-						<td><em>`0</em><br>An instance of any entity to be cached in memory.</td>
-					</tr>
-					<tr>
-						<td>policy</td>
-						<td><em>System.Runtime.Caching.CacheItemPolicy</em><br>Cache policy</td>
-					</tr>
-					<tr>
-						<td>keys</td>
-						<td><em>System.Object[]</em><br>Values to be used for creating a unique cache key.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="morethanoneobjectfoundexception-1">MoreThanOneObjectFoundException`1</h2>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - </li>
-			</ul>
-			<h3 id="constructor-propertyname-value-">Constructor(propertyName, value)</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>propertyName</td>
-						<td><em>System.String</em><br></td>
-					</tr>
-					<tr>
-						<td>value</td>
-						<td><em>System.Object</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="objectnotfoundexception-1">ObjectNotFoundException`1</h2>
-			<p>Exception when the app cannot find an specific object.</p>
-			<h4 id="type-parameters">Type Parameters</h4>
-			<ul>
-				<li>T - Type of an entity.</li>
-			</ul>
-			<h3 id="constructor-idorname-">Constructor(idOrName)</h3>
-			<p>Initialize an instance of <a href="#objectnotfoundexception\`1">ObjectNotFoundException`1</a>.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>idOrName</td>
-						<td><em>System.Object</em><br>ID or name of the instance of T that cannot be found.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="idorname">IdOrName</h3>
-			<p>ID or name of the instance of T that cannot be found.</p>
-			<h2 id="outofrangeexception">OutOfRangeException</h2>
-			<p>The exception that is thrown when the value of an argument is outside the allowable range of values. This is an extension
-				of <a href="#system.argumentoutofrangeexception">System.ArgumentOutOfRangeException</a>.</p>
-			<h3 id="constructor-paramname-actualvalue-validvalues-message-">Constructor(paramName, actualValue, validValues, message)</h3>
-			<p>Initializes a new instance of <a href="#outofrangeexception">OutOfRangeException</a>.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>paramName</td>
-						<td><em>System.String</em><br>The name of the parameter that caused the exception.</td>
-					</tr>
-					<tr>
-						<td>actualValue</td>
-						<td><em>System.Object</em><br>The value of the argument that causes this exception.</td>
-					</tr>
-					<tr>
-						<td>validValues</td>
-						<td><em>System.String</em><br>The valid values for paramName.</td>
-					</tr>
-					<tr>
-						<td>message</td>
-						<td><em>System.String</em><br>The message that describes the error.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="validvalues">ValidValues</h3>
-			<p>Gets valid values for the parameters which this <a href="#outofrangeexception">OutOfRangeException</a> has been raised
-				for.
-			</p>
-			<h2 id="servicenotfoundexception">ServiceNotFoundException</h2>
-			<p>Defines an exception thrown when there is no service for the requested type.</p>
-			<h3 id="constructor-type-">Constructor(type)</h3>
-			<p>Initializes a new <a href="#servicenotfoundexception">ServiceNotFoundException</a>.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>type</td>
-						<td><em>System.Type</em><br></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="servicetype">ServiceType</h3>
-			<p>The type that there is no service available for it.</p>
-		</section>
-	</section>
-
+				<h3 id="defaultglobalabsoluteexpiration">DefaultGlobalAbsoluteExpiration</h3>
+				<p>Gets or sets default global absolute expiration.</p>
+				<h4 id="remarks">Remarks</h4>
+				<p>If no policy pass to the GenericSet() methos, and the value of this field is not zero, a new <a href="#system.runtime.caching.cacheitempolicy">System.Runtime.Caching.CacheItemPolicy</a>					with AbsoluteExpiration equals to the value of this field will be assign to the cached entity.</p>
+				<h3 id="genericget-keys-">GenericGet(keys)</h3>
+				<p>Gets chahed value for keys, if there's any in the memory cache.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>keys</td>
+							<td><em>System.Object[]</em><br>Values to be used for creating a unique cache key.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="returns">Returns</h4>
+				<p>Chahed value, if there's any; otherwise, null.</p>
+				<h3 id="genericset-entity-policy-keys-">GenericSet(entity, policy, keys)</h3>
+				<p>Saves entity in the memory cache.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>entity</td>
+							<td><em>`0</em><br>An instance of any entity to be cached in memory.</td>
+						</tr>
+						<tr>
+							<td>policy</td>
+							<td><em>System.Runtime.Caching.CacheItemPolicy</em><br>Cache policy</td>
+						</tr>
+						<tr>
+							<td>keys</td>
+							<td><em>System.Object[]</em><br>Values to be used for creating a unique cache key.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="morethanoneobjectfoundexception-1">MoreThanOneObjectFoundException`1</h2>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - </li>
+				</ul>
+				<h3 id="constructor-propertyname-value-">Constructor(propertyName, value)</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>propertyName</td>
+							<td><em>System.String</em><br></td>
+						</tr>
+						<tr>
+							<td>value</td>
+							<td><em>System.Object</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="objectnotfoundexception-1">ObjectNotFoundException`1</h2>
+				<p>Exception when the app cannot find an specific object.</p>
+				<h4 id="type-parameters">Type Parameters</h4>
+				<ul>
+					<li>T - Type of an entity.</li>
+				</ul>
+				<h3 id="constructor-idorname-">Constructor(idOrName)</h3>
+				<p>Initialize an instance of <a href="#objectnotfoundexception\`1">ObjectNotFoundException`1</a>.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>idOrName</td>
+							<td><em>System.Object</em><br>ID or name of the instance of T that cannot be found.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="idorname">IdOrName</h3>
+				<p>ID or name of the instance of T that cannot be found.</p>
+				<h2 id="outofrangeexception">OutOfRangeException</h2>
+				<p>The exception that is thrown when the value of an argument is outside the allowable range of values. This is an extension
+					of <a href="#system.argumentoutofrangeexception">System.ArgumentOutOfRangeException</a>.</p>
+				<h3 id="constructor-paramname-actualvalue-validvalues-message-">Constructor(paramName, actualValue, validValues, message)</h3>
+				<p>Initializes a new instance of <a href="#outofrangeexception">OutOfRangeException</a>.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>paramName</td>
+							<td><em>System.String</em><br>The name of the parameter that caused the exception.</td>
+						</tr>
+						<tr>
+							<td>actualValue</td>
+							<td><em>System.Object</em><br>The value of the argument that causes this exception.</td>
+						</tr>
+						<tr>
+							<td>validValues</td>
+							<td><em>System.String</em><br>The valid values for paramName.</td>
+						</tr>
+						<tr>
+							<td>message</td>
+							<td><em>System.String</em><br>The message that describes the error.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="validvalues">ValidValues</h3>
+				<p>Gets valid values for the parameters which this <a href="#outofrangeexception">OutOfRangeException</a> has been raised
+					for.
+				</p>
+				<h2 id="servicenotfoundexception">ServiceNotFoundException</h2>
+				<p>Defines an exception thrown when there is no service for the requested type.</p>
+				<h3 id="constructor-type-">Constructor(type)</h3>
+				<p>Initializes a new <a href="#servicenotfoundexception">ServiceNotFoundException</a>.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>type</td>
+							<td><em>System.Type</em><br></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="servicetype">ServiceType</h3>
+				<p>The type that there is no service available for it.</p>
+			</section>
 </body>
+
 </html>

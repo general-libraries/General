@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
 using General.Web.Google.Recaptcha;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace General.Web.Test.GoogleTests.RecaptchaTests
 {
-    [TestClass]
+    [TestFixture]
     public class Recaptcha2Tests
     {
-        [TestMethod]
+        [Test]
         public void TestMethod1()
         {
             var recaptcha = new Recaptcha2();
@@ -18,7 +18,7 @@ namespace General.Web.Test.GoogleTests.RecaptchaTests
             Assert.IsNotNull(actual);
         }
 
-        [TestMethod]
+        [Test]
         public void TestMethod2()
         {
             var recaptcha = new Recaptcha2();

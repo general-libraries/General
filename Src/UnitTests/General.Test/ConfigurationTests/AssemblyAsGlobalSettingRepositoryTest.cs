@@ -92,7 +92,7 @@ namespace General.Test.ConfigurationTests
             // assert
             Assert.NotNull(settings);
             Assert.AreEqual(3, settings.Count);
-            Assert.AreEqual("Common.Test", settings[GlobalSettingKey.APPLICATION_NAME.Key]);
+            Assert.AreEqual("General.Test", settings[GlobalSettingKey.APPLICATION_NAME.Key]);
         }
 
     }

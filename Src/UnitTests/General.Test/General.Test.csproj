@@ -69,6 +69,7 @@
     <Compile Include="ExtensionsTests\StringExtensions_RemoveSpaces.cs" />
     <Compile Include="HelpersTests\ConvertHelperTests.cs" />
     <Compile Include="HelpersTests\HashHelperTests.cs" />
+    <Compile Include="Mono.OptionsTests\OptionSetTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +82,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

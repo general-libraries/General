@@ -101,6 +101,7 @@
     <Compile Include="LogManagement\LogManager.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="MemoryCacheManager.cs" />
+    <Compile Include="Mono.Options\Options.cs" />
     <Compile Include="MoreThanOneObjectFoundException.cs" />
     <Compile Include="ObjectNotFoundException.cs" />
     <Compile Include="OutOfRangeException.cs" />

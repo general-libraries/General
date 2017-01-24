@@ -10,6 +10,8 @@ A Framework for General and Common .Net Helpers, Extensions, Codes, etc.
 
 [![NuGet BuildStats Badge](https://buildstats.info/nuget/General)](https://www.nuget.org/packages/General/) [![NuGet Shields Badge](https://img.shields.io/nuget/v/General.svg)](https://www.nuget.org/packages/General/)
 
+[![Coverage Status](https://coveralls.io/repos/github/general-libraries/General/badge.svg?branch=master)](https://coveralls.io/github/general-libraries/General?branch=master)
+
 ## Documentation
 [Wiki](https://github.com/general-libraries/General/wiki)
 
